@@ -5,7 +5,7 @@ exercises: 0
 questions:
 - "Key question -what is R"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand the difference between R and R studio"
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 **R**
