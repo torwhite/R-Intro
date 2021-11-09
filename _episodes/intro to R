@@ -29,6 +29,7 @@ RStudio is the integrated development environment (IDE) for R. It is available i
 - Console – Write and run the code together directly here
 - Environment – List of objects and variables created and present in the current session
 - Graphics – Displays the plots
+You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
 
 
 {% include links.md %}
