@@ -2,14 +2,14 @@
 layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
-boxId: kweltidiq4bv1m9ow12prsuo9x2espsd
+boxId: bgfsp1jwffxcfca3ovps2thc26x9kjpx
 ---
 
 
 -------------------------------------------
-Add workshop description here. Make sure it is descriptive enough that people understand what they will learn in the workshop, but only one paragraph with no more than 3-5 sentences. (same as workshop description for event announcements)
+This workshop helps attendees provides an introduction to R, an overview on installing packages, information on different data types and data structure . Next it dives into a detailed description of functions performed under two main data structures. Finally, logical operators section touches base on basic statistical analysis (eg:univariate analysis). 
 
-Additionally, in a second paragraph, please mention the data set or materials that will be used in the workshop and briefly describe them. Also, briefly describe some of the things that will be done with the data/materials in the workshop, "i.e. load data into Jupyter Notebook and create basic data visualizations showing the relationship between [variable 1] and [variable 2].
+The Deafult dataset of cars and colleges will be used to conduct the different analysis. steps on how to import this data are also a part of this workshop.
 
 {% comment %} briefly list workshop goals below - should be the same as the objectives from each workshop section (also repeated in the workshop overview) {% endcomment %}
 
