@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "Hvae Rstudio installed along with R"
 ---
-FIXME
+
 Codes can be directly run in the R console. Try running the below code to perform basic 
 arithmetic operations of Addition (+), Subtraction (-), Multiplication (*), Division (/) and Modulo (%%) 
 operation directly in the console.
