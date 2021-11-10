@@ -7,7 +7,7 @@ objectives:
 - "learn about the Rstudio panes"
 - "perform basic arithematic functions"
 keypoints:
-- "Hvae Rstucio installed along with R"
+- "Hvae Rstudio installed along with R"
 ---
 FIXME
 Codes can be directly run in the R console. Try running the below code to perform basic 
