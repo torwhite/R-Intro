@@ -24,8 +24,8 @@ The Deafult dataset of cars and colleges will be used to conduct the different a
 >   
 > __OR__ make sure you're comfortable with the following concepts (study suggestions in parentheses)  
 > 
-> * first pre-requisite ([resource 1]())
-> * second pre-requisite ([resource 2]())
+> * Basic understanding of statistical analysis ([resource 1]())
+> 
 > 
 {: .prereq}
 
@@ -51,6 +51,8 @@ Thank you for attending this workshop or reading through the workshop material! 
 
 ## Next Up...
 Check out these workshops after you've completed this one:
-1. [Workshop Title]()
-2. [Workshop Title]()
+1. [R intermediate workshop ]()
+2. [R Tidyverse]()
+3. [R Data Pre-Processing]()
+4. [R Advanced Data Visualization]()
 
