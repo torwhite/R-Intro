@@ -21,19 +21,24 @@ As of January 2017, there are more than 10,000 packages for R, the list of which
 Each package can easily be downloaded and used in R.
 In a 2019 survey conducted by Kaggle, R was the third most used programming language by data professionals.
 
-##**RStudio**
+**RStudio**
 RStudio is the integrated development environment (IDE) for R. It is available in two versions:
-• RStudio Desktop - Regular desktop application
-• RStudio Server - Runs on a remote server and accessed RStudio using a web browser
+* RStudio Desktop - Regular desktop application
+* RStudio Server - Runs on a remote server and accessed RStudio using a web browser
+
+
 [FIXME add R interface image]
-- Script Area – Write codes (or) scripts and run them separately
-Console – Write and run the code together directly here
-Environment – List of objects and variables created and present in the current session
-Graphics – Displays the plots
-You can find the list of keyboard shortcuts for RStudio
-Script Area – Write codes (or) scripts and run them separately
-Console – Write and run the code together directly here
-Environment – List of objects and variables created and present in the current session
-Graphics – Displays the plots
+
+
+*Script Area – Write codes (or) scripts and run them separately
+
+*Console – Write and run the code together directly here
+
+*Environment – List of objects and variables created and present in the current session
+
+*Graphics – Displays the plots
+
+
+
 You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
 {% include links.md %}
