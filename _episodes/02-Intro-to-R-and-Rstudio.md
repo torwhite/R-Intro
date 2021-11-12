@@ -14,7 +14,10 @@ FIXME
 
 ## **R**
 R is a programming language used to perform statistical computations and implement graphics. 
-It is open-source and free. It is generally used by statisticians for data mining, data analytics. 
+It is open-source and free. 
+
+It is generally used by statisticians for data mining, data analytics. 
+
 It helps to perform data wrangling, analyzing and visualizing data easily.
 
 R has a list of packages each of which helps you perform certain function. 
