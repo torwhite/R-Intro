@@ -18,8 +18,10 @@ operation directly in the console.
 
 Implementing the same code in the script area. If you do not see a file open in the script 
 area select **File → New File → R Script** from the menu and then type the code in the new file that appears.
+
 Now the code in the script area (or R File) does not execute automatically, instead place 
 the cursor on the line which needs to be executed and select **RUN** option or press **Ctrl + Enter**(for windows). 
+
 To run multiple lines of code, select all the lines first and then select **RUN** option or press **Ctrl + Enter**.
 
 [FIXME Script area image]
