@@ -235,9 +235,9 @@ Provides a list of Boolean results based on operation performed
 
 > - Greater than 
 
->>= - Greater than or equal to 
->>
->>== - Equal to 
+>= - Greater than or equal to 
+
+== - Equal to 
 
 != - Not equal to 
 
