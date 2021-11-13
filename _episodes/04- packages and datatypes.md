@@ -47,9 +47,9 @@ install.packages("pacman")
 
 **3) Factors** – Can be numeric/character but have only a fixed set of values, e.g. Age groups, Race
 
-      a) Nominal – The order of the factors does not matter since they have no significance, e.g. Country, Gender, Race
+     a) Nominal – The order of the factors does not matter since they have no significance, e.g. Country, Gender, Race
 
-      b) Ordinal – These factors can be ordered since they hold a numerical significance, 
+     b) Ordinal – These factors can be ordered since they hold a numerical significance, 
 e.g. Satisfaction rating (“extreme dislike”, “dislike”, “neutral”, “like”, “extreme like”)
 
 [FIXME add data type image ]
