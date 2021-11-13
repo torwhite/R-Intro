@@ -16,6 +16,19 @@ Vectors are the basic data structure of R. Vectors can hold multiple values toge
 The type of data inside a vector can be determined by using **typeof()** function and the length (or)
 number of elements in a vector can be found with **length()** function. 
 
-R uses one indexing, hence the position of the first component in a vector can be accessed by,
+R uses one indexing, hence the position of the first component in a vector can be accessed by,**vector_name[1]**
+
+[FIXME add code image]
+
+A vector will **always** contain data of same data type. If a vector contains multiple data types 
+the vector will convert all its values to the same data type in the below order of precedence: 
+
+• Character 
+
+• Double (Float / Decimals) 
+
+• Integers (Round whole numbers)
+
+
 
 {% include links.md %}
