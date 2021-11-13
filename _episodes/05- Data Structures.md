@@ -11,7 +11,7 @@ keypoints:
 ---
 FIXME
 
-## **1. VECTORS**
+### **1. VECTORS**
 Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. 
 The type of data inside a vector can be determined by using **typeof()** function and the length (or)
 number of elements in a vector can be found with **length()** function. 
@@ -103,6 +103,14 @@ Data frames in R can be created in two ways:
 • Using data.frame() command 
 
 • Importing data from files such as .csv, .xlsx etc.
+
+**data.frame() FUNCTION:**
+
+While using the command we can follow the below syntax 
+    data.frame( column_1, column_2, column_3, …………………….) 
+    
+Make sure that the names of the columns are unique and are of same length.
+
                 
         
 
