@@ -57,7 +57,53 @@ num [1:4] 1 2 3 4
 ~~~
 {: .language-r}
 
+[FIXME add code image]
+
+### **Subsetting a vector**
+
+R uses one-indexing mechanism where the elements in the vector start with an index number of one.
+
+vector_name[4] - Element at the fourth position (index) in the vector
+
+vector_name[1:4] - Elements from positions 1 to 4 in the vector
+
+vector_name[c(1,4)] - Elements at positions 1 & 4 only in the vector
+
+vector_name[-c(1,4)] - All elements except those at positions 1 & 4 in the vector
+
+[FIXME add code image]
+
+### **Sorting a vector**
+
+Sorting of a vector can be performed using two different functions
+
+sort(vector) - Sorts the vector numerically or alphabetically based on vector type 
+              (ascending by default)
+
+order(vector) - Returns the indices of the vector in the order they would appear when 
+                the vector is sorted (ascending by default)
+                
+[FIXME add code image]
 
 
+### **2. DATA FRAME** 
+
+Data frames are used for storing Data tables in R. They are two-dimensional array structure and
+are similar to tables where each column represents one variable. The main features to note about 
+a data frame are: 
+
+• Columns can be of different data types
+
+• Each column name must be unique 
+
+• Each column should be of same length i.e. contain the same number of elements
+
+Data frames in R can be created in two ways: 
+
+• Using data.frame() command 
+
+• Importing data from files such as .csv, .xlsx etc.
+                
+        
 
 {% include links.md %}
