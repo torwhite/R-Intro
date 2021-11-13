@@ -31,7 +31,7 @@ the vector will convert all its values to the same data type in the below order 
 
 [FIXME add code image for each data type]
 
-## *Analyzing a Vector*
+### **Analyzing a Vector**
 
 class(vector_name) - Type of data present inside the vector 
 
