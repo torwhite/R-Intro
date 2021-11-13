@@ -31,7 +31,7 @@ the vector will convert all its values to the same data type in the below order 
 
 [FIXME add code image for each data type]
 
-### **Analyzing a Vector**
+#### **Analyzing a Vector**
 
 class(vector_name) - Type of data present inside the vector 
 
@@ -59,7 +59,7 @@ num [1:4] 1 2 3 4
 
 [FIXME add code image]
 
-### **Subsetting a vector**
+####  **Subsetting a vector**
 
 R uses one-indexing mechanism where the elements in the vector start with an index number of one.
 
@@ -73,7 +73,7 @@ vector_name[-c(1,4)] - All elements except those at positions 1 & 4 in the vecto
 
 [FIXME add code image]
 
-### **Sorting a vector**
+#### **Sorting a vector**
 
 Sorting of a vector can be performed using two different functions
 
