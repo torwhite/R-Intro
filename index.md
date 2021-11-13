@@ -40,9 +40,13 @@ The Deafult dataset of cars and colleges will be used to conduct the different a
 |Section 3| .....| | 
 
 
+{% comment %}
+
 ## Workshop Recording
 
 {% include box_player.html id=page.boxId %}
+
+{% endcomment %}
 
 ## Survey
 
