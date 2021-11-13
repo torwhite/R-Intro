@@ -43,6 +43,21 @@ is.null(vector_name) - Checks if the entire vector is empty
 
 length(vector_name) - Number of elements present inside the vector
 
+Syntax:
+
+~~~
+> x <- c(1,2,3,4)
+> class (x)
+[1] "numeric"
+> str (x)
+num [1:4] 1 2 3 4 
+> length (x)
+[1] 4
+
+~~~
+{: .language-r}
+
+
 
 
 {% include links.md %}
