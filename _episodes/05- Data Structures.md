@@ -233,9 +233,9 @@ Provides a list of Boolean results based on operation performed
 
 <= - Less than or equal to 
 
->- Greater than 
+>-Greater than 
 
-> = -Greater than or equal to 
+>=-Greater than or equal to 
 
 == - Equal to 
 
