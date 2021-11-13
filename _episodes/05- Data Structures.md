@@ -47,7 +47,7 @@ Syntax:
 
 ~~~
 > x <- c(1,2,3,4)
-> class (x)
+> **class (x)**
 [1] "numeric"
 > str (x)
 num [1:4] 1 2 3 4 
