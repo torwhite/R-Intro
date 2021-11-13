@@ -29,6 +29,20 @@ the vector will convert all its values to the same data type in the below order 
 
 • Integers (Round whole numbers)
 
+[FIXME add code image for each data type]
+
+## *Analyzing a Vector*
+
+class(vector_name) - Type of data present inside the vector 
+
+str(vector_name) - Structure of the vector 
+
+is.na(vector_name) - Checks if each element of vector is “NA” 
+
+is.null(vector_name) - Checks if the entire vector is empty 
+
+length(vector_name) - Number of elements present inside the vector
+
 
 
 {% include links.md %}
