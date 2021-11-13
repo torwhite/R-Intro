@@ -111,6 +111,26 @@ While using the command we can follow the below syntax
     
 Make sure that the names of the columns are unique and are of same length.
 
+Syntax:
+
+~~~
+> Numbers = c(1,2,3,4)
+> Alphabets = c("A", "B", "C","D")
+> Boolean = c( TRUE, FALSE, TRUE, TRUE)
+> df = data.frame(Numbers, Alphabets, Boolean)
+> class(df)
+[1]  "data.frame"
+
+df
+Numbers     Alphabets    Boolean
+      1             A       TRUE
+      2             B      FALSE
+      3             C       TRUE
+      4             D       TRUE
+      
+~~~
+{: .language-r}
+
                 
         
 
