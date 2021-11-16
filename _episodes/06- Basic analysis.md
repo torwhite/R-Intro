@@ -40,6 +40,49 @@ mtcars$carb <- as.factor(mtcars$carb)
 str(mtcars) 
 
 The as.factor is used to convert a column of different data type to a factor data type
-The columns
+
+[FIXME add dataset image]
+
+The columns **cyl, vs, am, gear, carb** are all factors with **3, 2, 2, 3, 6** individual values, respectively.
+
+To select an individual column, you can write the code in below format using **$** symbol 
+
+Data_frame_name$column_name 
+Eg: **mtcars$cyl**
+
+Below are commands to perform univariate (single variable) analysis in R
+
+[FIXME add command and description image]
+
+[FIXME add code image]
+
+### **2. NUMERIC:**
+
+[FIXME add command and description image]
+
+Quantiles divide the range of values in equal distribution. For e.g. 50% quantile represents 
+a value such that 50 percent of the values in the given list are below this value and 50 percent of
+the values in the given list are above this value (which is the median)
+
+Quantile 0% - Lowest value in the list
+Quantile 50% - Median value in the list 
+Quantile 100% - Highest value in the list 
+
+Kindly find a video explaining in detail quantile and percentiles **here**.
+
+[FIXME add code image]
+
+## **BIVARIATE ANALYSIS**
+
+### **1. TWO FACTORS:** 
+
+We will now use the esoph dataset whose description can be found **here**. Load the dataset using: 
+
+   data(esoph)
+   
+   View(esoph) 
+   
+   str(esoph)
+
 
 {% include links.md %}
