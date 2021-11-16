@@ -107,8 +107,24 @@ vector_name[c(1,4)] - Elements at positions 1 & 4 only in the vector
 
 vector_name[-c(1,4)] - All elements except those at positions 1 & 4 in the vector
 
-[FIXME add code image]
+~~~
+> x <- c("A", "B", "C", "D", "E")
+> x[1]
+[1] "A"
+> x[4]
+[1]"D"
 
+> x[1:4]
+[1] "A", "B", "C", "D"
+
+> x[c(1,4)]
+[1] "A" "D"
+
+> x[-c(1,4)]
+[1] "B", "C", "E"
+
+~~~
+{: .language-r}
 #### **Sorting a vector**
 
 Sorting of a vector can be performed using two different functions
