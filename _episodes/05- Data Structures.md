@@ -43,8 +43,29 @@ the vector will convert all its values to the same data type in the below order 
 • Double (Float / Decimals) 
 
 • Integers (Round whole numbers)
+~~~
+ > x <- c(9,8,7,6.32)
+ > x
+ [1] 9,8,7,6.32
+ > type of (x)
+ [1] "double"
+ 
+ > x <- c(9,8, "Hello")
+ > x [1]
+ [1] "9" "8" "Hello"
+ > type of (x) 
+ [1] "Character"
+ 
+ > x <- c(3:6)
+ > x
+ [1] 3,4,5,6
+ > type of (x)
+ [1] "character"
 
-[FIXME add code image for each data type]
+ ~~~
+{: .language-r}
+ 
+
 
 #### **Analyzing a Vector**
 
