@@ -218,16 +218,64 @@ lines(density(values), col="yellow", lwd=3)
 hist – Creates a histogram 
 lines – Draws the line describing the distribution
 
-![image](https://user-images.githubusercontent.com/91500523/142071552-bc362679-abbc-49fd-9080-6aee0f07ec96.png)
+[FIXME add Normal Distribution image]
+
 
 
 ### **Z-SCORES:**
 
 Number of standard deviations the value is away from mean
 
-![image](https://user-images.githubusercontent.com/91500523/142071471-377d6436-eb28-4692-bdf3-362210043fb3.png)
+[FIXME add formula image]
 
+For a random normal distribution with mean 100 and standard deviation (sd) of 30 
+the z-score for a value of 76 and 136 can be calculated as, 
+X = 76     X = 136
+Z = (76 - 100) / 30     Z = (136 - 100) / 30
+  = -0.8 SD from mean     = +1.2 SD from mean
+  
+### **PERCENTILE:** 
 
+The measure describes the percentage of values that are below the observed value in a distribution. 
+Percentiles are different from percentage on the grounds that, percentage represents the value out 
+of 100 but percentile indicates the percentage of values that are below the observed value.
 
+For e.g., in a class of 100 students if a student scores 42 marks in a test out of 50, 
+Percentage = (42/50) X 100 = 84%
+
+If 42 is the third highest mark it means the student has scored more marks than 97 of his/her classmates,
+
+Percentile = (97/100) X 100 = 97% 
+
+Thus, the student is in the 97th percentile, indicating that 97% of the marks in the class are below 
+the score of 42 (or) the student has scored higher than 97% of his/her classmates.
+
+Note: Percentile can never be 100. In the above example if the student was the topper, then 
+he/she has scored better than 99 of his/her classmates and is in the 99th percentile.
+
+Given an observed value, mean and sd you can calculate the percentile in R using pnorm() function. 
+Kindly note that the result is a value between 0 and 1. To represent the percentile in terms 
+of percentage, we will have to multiply it by 100. 
+
+Syntax: 
+~~~
+pnorm(observed_value, mean, sd) 
+
+~~~
+{: .language-r}
+
+E.g.: pnorm(65, 50, 10)
+
+Similarly if you are given the percentile value, mean and sd the value can be calculated using **qnorm()** function. 
+
+Syntax: 
+~~~
+qnorm(percentile_value, mean, sd) E.g.: qnorm(0.9, 50, 10)
+~~~
+{: .language-r}
+
+[FIXME add code image]
+
+You can find a video explaining percentiles **here.**
 
 {% include links.md %}
