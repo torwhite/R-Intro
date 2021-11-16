@@ -11,7 +11,7 @@ keypoints:
 - "basic statistical knowledge and formulas"
 ---
 
-### **UNIVARIATE ANALYSIS**
+##**UNIVARIATE ANALYSIS**
 
 R has many in-built datasets using which we can use. 
 
@@ -19,8 +19,10 @@ You can find the available list of datasets and its description **here**.
 
 You can also view a detailed description of the data set using the command **help("data_set_name")**
 
-1. FACTOR:
+### **1. FACTOR:**
+
 Kindly run the below command to load the in-built dataset mtcars in your R session: 
+
 library(datasets)
 
 data("mtcars")
