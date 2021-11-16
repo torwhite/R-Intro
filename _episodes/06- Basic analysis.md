@@ -126,8 +126,17 @@ Correlation → Helps establish a relationship between the two numerical variabl
   causes an increase of value in the other variable and vice-versa Correlation 
   
 * Negative, indicates an inverse relationship. Increase of value in one variable Correlation 
-  causes a decrease of value in the other variable
-
+  causes a decrease of value in the other variable.
+  
+  [FIXME add correlation image]
+  
+  Videos explaining correlation in detail – **Part 1 & Part 2**
+  
+  Correlation is performed in R using the below command
+  
+  **cor(numeric_variable1, numeric_variable2)** - Correlation value between the two numeric variables
+  
+  Import the **mtcars dataset** using the commands data(mtcars) --- View(mtcars)
 
 
 
