@@ -218,7 +218,7 @@ lines(density(values), col="yellow", lwd=3)
 hist – Creates a histogram 
 lines – Draws the line describing the distribution
 
-[FIXME add Normal Distribution image]
+![image](https://user-images.githubusercontent.com/91500523/142071552-bc362679-abbc-49fd-9080-6aee0f07ec96.png)
 
 
 ### **Z-SCORES:**
