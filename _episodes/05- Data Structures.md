@@ -17,8 +17,23 @@ The type of data inside a vector can be determined by using **typeof()** functio
 number of elements in a vector can be found with **length()** function. 
 
 R uses one indexing, hence the position of the first component in a vector can be accessed by,**vector_name[1]**
-
-[FIXME add code image]
+ ~~~
+ > x <- C (9,8,7,6)
+ > x
+ [1] 9,8,7,6
+ > type of (x)
+ [1] "double"
+ > lenght (x)
+ [1] 4
+ > x [1]
+ [1] 9
+  > x [3]
+ [1] 7
+ 
+ ~~~
+{: .language-r}
+ 
+ 
 
 A vector will **always** contain data of same data type. If a vector contains multiple data types 
 the vector will convert all its values to the same data type in the below order of precedence: 
