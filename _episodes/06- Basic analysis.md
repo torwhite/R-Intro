@@ -83,6 +83,14 @@ We will now use the esoph dataset whose description can be found **here**. Load 
    View(esoph) 
    
    str(esoph)
+   
+The esoph dataset hast three factor columns: 
+
+**➢ agegp – Age group 
+➢ alcgp – Alcohol consumption 
+➢ tobgp – Tobacco consumption**
+
+To compare and analyze two factors the same commands as a univariate factor analysis is used with a slight change in the arguments passed:
 
 
 {% include links.md %}
