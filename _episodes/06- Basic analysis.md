@@ -116,13 +116,13 @@ The **prop.table()** command has an argument “margin” which is used to calcu
 We analyze the relationship between two numeric variables using correlation metric.
 
 Correlation → Helps establish a relationship between the two numerical variables Correlation 
-* Has value between -1 to +1 Correlation 
-* Value farther from zero, more related are the two numerical variables Correlation
-* Value closer to zero, less related are the two numerical variables Correlation
-* Positive, indicates a direct relationship. Increase of one value in one variable Correlation 
-* causes an increase of value in the other variable and vice-versa Correlation 
-* Negative, indicates an inverse relationship. Increase of value in one variable Correlation 
-*  causes a decrease of value in the other variable
+            * Has value between -1 to +1 Correlation 
+            * Value farther from zero, more related are the two numerical variables Correlation
+            * Value closer to zero, less related are the two numerical variables Correlation
+            * Positive, indicates a direct relationship. Increase of one value in one variable Correlation 
+            * causes an increase of value in the other variable and vice-versa Correlation 
+            * Negative, indicates an inverse relationship. Increase of value in one variable Correlation 
+              causes a decrease of value in the other variable
 
 
 
