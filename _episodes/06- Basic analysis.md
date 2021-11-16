@@ -11,7 +11,7 @@ keypoints:
 - "basic statistical knowledge and formulas"
 ---
 
-##**UNIVARIATE ANALYSIS**
+## **UNIVARIATE ANALYSIS**
 
 R has many in-built datasets using which we can use. 
 
