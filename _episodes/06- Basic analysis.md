@@ -136,7 +136,27 @@ Correlation → Helps establish a relationship between the two numerical variabl
   
   **cor(numeric_variable1, numeric_variable2)** - Correlation value between the two numeric variables
   
-  Import the **mtcars dataset** using the commands data(mtcars) --- View(mtcars)
+  Import the **mtcars dataset** using the commands data(mtcars) -> View(mtcars)
+  
+  **mtcars** has a few numerical variables 
+  
+  ➢ **mpg**- Miles/(US) gallon (or) Mileage 
+  
+  ➢ **disp** - Displacement 
+  
+  ➢ **hp** - Horsepower
+
+Now we can run the below commands to determine the correlation relationship
+
+[FIXME add command and description image]
+
+The correlation value is negative between mileage and horsepower. Thus, there is an inverse 
+relationship between them i.e. Higher the horsepower, lower is the car mileage and vice versa.
+
+The correlation value is positive between displacement and horsepower. Thus, there is a 
+direct relationship between them i.e. Higher the displacement, higher is the car horsepower 
+and same for lower values (Lower displacement indicates a lower horsepower).
+
 
 
 
