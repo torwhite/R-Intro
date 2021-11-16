@@ -54,13 +54,13 @@ the vector will convert all its values to the same data type in the below order 
  > x [1]
  [1] "9" "8" "Hello"
  > type of (x) 
- [1] "Character"
+ [1] "character"
  
  > x <- c(3:6)
  > x
  [1] 3,4,5,6
  > type of (x)
- [1] "character"
+ [1] "integer"
 
  ~~~
 {: .language-r}
