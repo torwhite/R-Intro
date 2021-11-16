@@ -167,12 +167,65 @@ dataset_name, Function_to_perform)
 
 summarise()
 
-describeBy(Numerical_column , Factor_column)  -Perform all numerical analytics on each group of the factor column
-
+describeBy(Numerical_column , Factor_column)  
 
 ~~~
 {: .language-r}
 
+[FIXME add command and description image]
+
+[FIXME add code image]
+
+## **PROBABILITY**
+
+
+### **NORMAL DISTRIBUTION:**
+
+Distribution of the values creates/follows a bell curve. The distribution of the variable follows a 
+
+Gaussian curve 
+
+**μ**- Mean (Average) 
+
+**Variance** -  Sum of square of the difference of each value from mean divided by number of values 
+
+**σ** – Standard Deviation (Square root of variance)
+
+[FIXME add Normal Distribution image]
+
+Not all normal distributions are same. They differ based on the values
+
+[FIXME add Normal Distribution image]
+
+To generate a normal distribution in R we can use the **rnorm()** function 
+
+Syntax:
+
+~~~
+rnorm(mean_value, sd_value, number_of_values)
+~~~
+{: .language-r}
+
+E.g.: rnorm(mean=1000, sd=250, 100) 
+The above code will generate a list of 100 random values such that they follow a normal
+distribution with mean at 1000 and a standard deviation of 250 
+
+To visualize the distribution of the values try running the below set of commands 
+values <- rnorm(mean=1000, sd=250, 10000) 
+hist(values, main="Normal Distribution", col="steelblue", xlab="Mean=1000, SD=250", freq=F)
+lines(density(values), col="yellow", lwd=3) 
+
+hist – Creates a histogram 
+lines – Draws the line describing the distribution
+
+[FIXME add Normal Distribution image]
+
+
+### **Z-SCORES:**
+
+Number of standard deviations the value is away from mean
+
+![image](https://user-images.githubusercontent.com/91500523/142071471-377d6436-eb28-4692-bdf3-362210043fb3.png)
 
 
 
