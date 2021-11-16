@@ -132,11 +132,11 @@ Correlation → Helps establish a relationship between the two numerical variabl
   
   Videos explaining correlation in detail – **Part 1 & Part 2**
   
-  Correlation is performed in R using the below command
+Correlation is performed in R using the below command
   
-  **cor(numeric_variable1, numeric_variable2)** - Correlation value between the two numeric variables
+**cor(numeric_variable1, numeric_variable2)** - Correlation value between the two numeric variables
   
-  Import the **mtcars dataset** using the commands data(mtcars) -> View(mtcars)
+Import the **mtcars dataset** using the commands data(mtcars) -> View(mtcars)
   
   **mtcars** has a few numerical variables 
   
@@ -157,6 +157,21 @@ The correlation value is positive between displacement and horsepower. Thus, the
 direct relationship between them i.e. Higher the displacement, higher is the car horsepower 
 and same for lower values (Lower displacement indicates a lower horsepower).
 
+### **3. ONE FACTOR & ONE NUMERIC:**
+
+Use below commands to analyze one factor and one numeric variable
+
+~~~
+aggregate(Numerical_column ~ Factor_column,
+dataset_name, Function_to_perform) 
+
+summarise()
+
+describeBy(Numerical_column , Factor_column)  -Perform all numerical analytics on each group of the factor column
+
+
+~~~
+{: .language-r}
 
 
 
