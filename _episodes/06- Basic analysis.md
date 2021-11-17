@@ -274,7 +274,15 @@ qnorm(percentile_value, mean, sd) E.g.: qnorm(0.9, 50, 10)
 ~~~
 {: .language-r}
 
-[FIXME add code image]
+~~~
+> pnorm (65, 50, 10)
+[1] 0.9331928
+> qnorm (0.9, 50, 10)
+[1] 62.81552
+~~~
+{: .language-r}
+
+
 
 You can find a video explaining percentiles **here.**
 
