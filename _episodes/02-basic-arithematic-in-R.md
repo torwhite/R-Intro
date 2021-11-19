@@ -14,7 +14,7 @@ Codes can be directly run in the R console. Try running the below code to perfor
 arithmetic operations of Addition (+), Subtraction (-), Multiplication (*), Division (/) and Modulo (%%) 
 operation directly in the console.
 
-![basic math function](fig/02 - basic math functions.jpg)
+![basic math function](fig/02 - "basic math functions.jpg")
 
 Implementing the same code in the script area. If you do not see a file open in the script 
 area select **File → New File → R Script** from the menu and then type the code in the new file that appears.
