@@ -26,7 +26,7 @@ Each package can easily be downloaded and used in R.
 
 In a 2019 survey conducted by Kaggle, R was the third most used programming language by data professionals.
 
-![Confidence Interval](../fig/01- Programming lanugae use chart.jpg)
+![programming language](../fig/01- Programming lanugae use chart.jpg)
  
 
 ## **RStudio**
@@ -35,8 +35,7 @@ RStudio is the integrated development environment (IDE) for R. It is available i
 * RStudio Desktop - Regular desktop application
 * RStudio Server - Runs on a remote server and accessed RStudio using a web browser
 
-
-[FIXME add R interface image]
+![R Console] (fig/01- R console.jpg)
 
 
 *Script Area – Write codes (or) scripts and run them separately
