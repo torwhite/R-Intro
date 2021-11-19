@@ -36,7 +36,7 @@ RStudio is the integrated development environment (IDE) for R. It is available i
 * RStudio Server - Runs on a remote server and accessed RStudio using a web browser
 
 
-![R console](fig/01- R console.jpg)
+[![R console](fig/01- R console.jpg)]
 
 
 
