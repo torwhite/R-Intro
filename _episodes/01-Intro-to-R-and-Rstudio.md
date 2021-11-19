@@ -25,7 +25,8 @@ As of January 2017, there are more than 10,000 packages for R, the list of which
 Each package can easily be downloaded and used in R.
 
 In a 2019 survey conducted by Kaggle, R was the third most used programming language by data professionals.
-![ Programming lanugae] (../fig/01- Programming lanugae use chart.jpg)
+
+![ Programming lanugae](../fig/01- Programming lanugae use chart.jpg)
  
 
 ## **RStudio**
