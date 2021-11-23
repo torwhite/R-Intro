@@ -26,7 +26,7 @@ Each package can easily be downloaded and used in R.
 
 In a 2019 survey conducted by Kaggle, R was the third most used programming language by data professionals.
 
-![Programming lanuage] (../fig/"01- Programming lanugae use chart.jpg")
+![Programming lanugae use chart](../fig/01- Programming lanugae use chart.jpg)
  
 
 ## **RStudio**
