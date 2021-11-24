@@ -199,7 +199,7 @@ Double click (or) click once and select open on your desired file to import
 Once the data has been imported successfully the data frame would be visible with its 
 name in the Environment part on the top right
 
-![environment pane](../fig/04.4- imported-data-in-environment- pane.jpg)
+![environment pane](../fig/04.4-environment-pane.jpg)
 
 
 
@@ -226,7 +226,7 @@ head(data_frame, n) - Data present in the first n rows of data frame (n=6 by def
 
 tail(data_frame, n) - Data present in the last n rows of data frame (n=6 by default)
 
-[FIXME add code image]
+![head and tail of dataframe](../fig/04.7-head-and-tail-of-dataframe.jpg)
 
 ### **Subsetting a data frame:**
 data_frame[1] - Display only first column 
@@ -237,7 +237,7 @@ data_frame[-c(1,4)] - Display all columns except one & four
 
 data_frame[c(1:4)] - Display columns one to four
 
-[FIXME add code image]
+![subsetting dataframe](../fig/04.8-Subsetting-a-data-frame.jpg)
 
 #### **Consider a dataframe created with the below commands:**
 Numbers = c(1, 2, 3, 4) 
@@ -252,7 +252,7 @@ df = data.frame(Numbers, Alphabets, Boolean, Float)
 
 df
 
-[FIXME add code image]
+![subsetting data frame 2](../fig/04.9-subsetting-a-data-frame-.jpg)
 
 data_frame_name[rows, columns] – Subset based on rows and columns
 
