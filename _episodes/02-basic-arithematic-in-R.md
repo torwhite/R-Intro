@@ -38,7 +38,7 @@ the cursor on the line which needs to be executed and select **RUN** option or p
 
 To run multiple lines of code, select all the lines first and then select **RUN** option or press **Ctrl + Enter**.
 
-[FIXME Script area image]
+![Run Command](../ fig/02- run-command.jpg)
 
 
 Values can be assigned to variables in R using the “<-” symbol. The variable is written on the left 
@@ -61,12 +61,11 @@ Once a variable is created it will be visible under the environment section
  ~~~
 {: .language-r}
 
-
-
-[FIXME environment pane image]
+![environment pane](../fig/02-environment-pane.jpg)
 
 One thing to be aware of is that R is **case-sensitive**. Hence variable “a” is different from “A”
 
+![error message](../fig/02- error-messgae.jpg)
 
 
 
