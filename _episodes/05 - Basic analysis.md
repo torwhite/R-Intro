@@ -52,13 +52,13 @@ Eg: **mtcars$cyl**
 
 Below are commands to perform univariate (single variable) analysis in R
 
-[FIXME add command and description image]
+![command univariate](../fig/05.2-command-univriate-analysis.jpg)
 
-[FIXME add code image]
+![univariate table](../fig/05.3-univariate-table.jpg)
 
 ### **2. NUMERIC:**
 
-[FIXME add command and description image]
+![numeric](../fig/05.4-numeric.jpg)
 
 Quantiles divide the range of values in equal distribution. For e.g. 50% quantile represents 
 a value such that 50 percent of the values in the given list are below this value and 50 percent of
@@ -70,7 +70,7 @@ Quantile 100% - Highest value in the list
 
 Kindly find a video explaining in detail quantile and percentiles **here**.
 
-[FIXME add code image]
+![quantile](../fig/05.5-quantile.jpg)
 
 ## **BIVARIATE ANALYSIS**
 
@@ -94,21 +94,22 @@ The esoph dataset hast three factor columns:
 
 To compare and analyze two factors the same commands as a univariate factor analysis is used with a slight change in the arguments passed:
 
-[FIXME add command and description image]
+![bivariate](../fig/05.6-bivariate.jpg)
 
-[FIXME add code image]
+![Bivariate](../fig/05.7-bivariate-data.jpg)
+
 
 You can use the below two functions to perform operations on table and proportionality tables:
 
-[FIXME add command and description image]
+![addmargin round](../fig/05.8-addmargin-round.jpg)
 
-[FIXME add code image]
+![addmargin dataset command](../fig/05.9-addmargin-round-dataset.jpg)
 
 The **prop.table()** command has an argument “margin” which is used to calculate percentages along individual rows/columns
 
-[FIXME add command and description image]
+![margins](../fig/5.10-margins.jpg)
 
-[FIXME add code image]
+![addmargins dataset](../fig/5.11-addmargins.jpg)
 
 
 ### **2. TWO NUMERICS:**
@@ -128,7 +129,7 @@ Correlation → Helps establish a relationship between the two numerical variabl
 * Negative, indicates an inverse relationship. Increase of value in one variable Correlation 
   causes a decrease of value in the other variable.
   
-  [FIXME add correlation image]
+![correlation](../fig/5.12-correlation.jpg)
   
   Videos explaining correlation in detail – **Part 1 & Part 2**
   
@@ -148,7 +149,7 @@ Import the **mtcars dataset** using the commands data(mtcars) -> View(mtcars)
 
 Now we can run the below commands to determine the correlation relationship
 
-[FIXME add command and description image]
+![correlation command](../fig/5.13-correlarion-command.jpg)
 
 The correlation value is negative between mileage and horsepower. Thus, there is an inverse 
 relationship between them i.e. Higher the horsepower, lower is the car mileage and vice versa.
@@ -183,7 +184,7 @@ describeBy(Numerical_column , Factor_column)- Perform all numerical analytics on
 {: .language-r}
 
 
-[FIXME add code image]
+![onefactor one numeric dataset](../fig/5.14-onefactor-onenumeric.jpg)
 
 ## **PROBABILITY**
 
@@ -200,11 +201,11 @@ Gaussian curve
 
 **σ** – Standard Deviation (Square root of variance)
 
-[FIXME add Normal Distribution image]
+![noraml distribution](../fig/5.15-nromal-distribution.jpg)
 
 Not all normal distributions are same. They differ based on the values
 
-[FIXME add Normal Distribution image]
+![normal distribution with diff sd](../fig/5.16-normal-distribution-with-different-sd.jpg)
 
 To generate a normal distribution in R we can use the **rnorm()** function 
 
@@ -227,7 +228,7 @@ lines(density(values), col="yellow", lwd=3)
 hist – Creates a histogram 
 lines – Draws the line describing the distribution
 
-[FIXME add Normal Distribution image]
+![normal distribution histogram](../fig/5.17-normal-distribution-histogram.jpg)
 
 
 
@@ -235,7 +236,7 @@ lines – Draws the line describing the distribution
 
 Number of standard deviations the value is away from mean
 
-[FIXME add formula image]
+![zscore](../fig/5.18-z score.jpg)
 
 For a random normal distribution with mean 100 and standard deviation (sd) of 30 
 the z-score for a value of 76 and 136 can be calculated as, 
