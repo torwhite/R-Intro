@@ -13,8 +13,22 @@ keypoints:
 Codes can be directly run in the R console. Try running the below code to perform basic 
 arithmetic operations of Addition (+), Subtraction (-), Multiplication (*), Division (/) and Modulo (%%) 
 operation directly in the console.
+ ~~~
+ > 2+2
+ [1] 4
+ > 2-2
+ [1] 0
+ >2*2
+ [1] 4
+ > 2/2
+ [1] 1
+ > 3%%2
+ [1] 1
 
-![Basic Math Function](fig/02 - basic math functions.jpg "02- basic math function.jpg")
+ ~~~
+{: .language-r}
+
+
 
 Implementing the same code in the script area. If you do not see a file open in the script 
 area select **File → New File → R Script** from the menu and then type the code in the new file that appears.
@@ -35,9 +49,25 @@ Assigning values to variables are quite useful especially if these values would 
 Similar to the previous examples, operations can be performed on the variables to get output 
 directly (or) the output can be stored in a different variable. 
 Once a variable is created it will be visible under the environment section
+~~~
+> x <- 3
+> y <- 5
+> x+y
+[1] 8
+> z <- x+y
+> z
+[1] 8
+
+ ~~~
+{: .language-r}
+
+
+
+[FIXME environment pane image]
 
 One thing to be aware of is that R is **case-sensitive**. Hence variable “a” is different from “A”
 
-[FIXME console and environment pane image]
+
+
 
 {% include links.md %}
