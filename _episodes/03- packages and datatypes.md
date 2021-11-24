@@ -34,12 +34,11 @@ install.packages("pacman")
 ~~~
 {: .language-r}
 
-
-[FIXME add package installation code image]
+![data type chart](../fig/03-data-type-chart.jpg)
 
 ## **Data Types**
 
-[FIXME add flow chart of data types image]
+![different datatype chart](../fig/03-different-datatype-chart.jpg)
 
 **1 )character** – Letter, words or strings which vary mostly and do not have any particular meaning for the data, e.g. Comments, Usernames
 
@@ -52,7 +51,7 @@ install.packages("pacman")
   b) Ordinal – These factors can be ordered since they hold a numerical significance, 
 e.g. Satisfaction rating (“extreme dislike”, “dislike”, “neutral”, “like”, “extreme like”)
 
-[FIXME add data type image ]
+![install package](../fig/03-install-package.jpg)
 
 
 
