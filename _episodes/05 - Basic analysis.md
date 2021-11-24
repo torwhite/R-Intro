@@ -41,7 +41,7 @@ str(mtcars)
 
 The as.factor is used to convert a column of different data type to a factor data type
 
-[FIXME add dataset image]
+![factor datattype](../fig/05.1-factor-datatype.jpg)
 
 The columns **cyl, vs, am, gear, carb** are all factors with **3, 2, 2, 3, 6** individual values, respectively.
 
@@ -172,7 +172,16 @@ describeBy(Numerical_column , Factor_column)
 ~~~
 {: .language-r}
 
-[FIXME add command and description image]
+~~~
+aggregate(Numerical_column ~ Factor_column,dataset_name, Function_to_perform)- Perform one specific numerical analytics on each group of the factor column
+
+summarise() - Perform multiple numerical analytics on each group of the factor column
+
+describeBy(Numerical_column , Factor_column)- Perform all numerical analytics on each group of the factor column
+
+~~~
+{: .language-r}
+
 
 [FIXME add code image]
 
