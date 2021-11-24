@@ -93,7 +93,7 @@ num [1:4] 1 2 3 4
 ~~~
 {: .language-r}
 
-[FIXME add code image]
+![analyzing vector](../fig/04.1-analyzing-a-vector.jpg)
 
 ####  **Subsetting a vector**
 
@@ -135,7 +135,7 @@ sort(vector) - Sorts the vector numerically or alphabetically based on vector ty
 order(vector) - Returns the indices of the vector in the order they would appear when 
                 the vector is sorted (ascending by default)
                 
-[FIXME add code image]
+![sorting vector](../fig/04.2-Sorting-vector.jpg)
 
 
 ### **2. DATA FRAME** 
@@ -192,14 +192,14 @@ data_frame_name <- read.csv(file.choose(), header = T)
 Here, file.choose() - Allows you to choose a .csv file stored in your local desktop, 
 header = T - Indicates the first column in the file contains column names
 
-[FIXME add code image]
+![importing data frame](../fig/04.3-importing-data-frame.jpg)
 
 Double click (or) click once and select open on your desired file to import
 
 Once the data has been imported successfully the data frame would be visible with its 
 name in the Environment part on the top right
 
-[FIXME add environment pane image]
+![environment pane](../fig/04.4- imported-data-in-environment- pane.jpg)
 
 
 
@@ -218,7 +218,9 @@ colnames(data_frame)
 
 rownames(data_frame) - Names of the rows
 
-[FIXME add code image]
+![analyzing data](../fig/04.5-analyzing-a-data-frame.jpg)
+
+![analyzing data](../fig/04.6-analyzing-data-frame.jpg)
 
 head(data_frame, n) - Data present in the first n rows of data frame (n=6 by default) 
 
