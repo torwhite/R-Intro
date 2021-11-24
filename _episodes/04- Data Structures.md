@@ -256,16 +256,16 @@ df
 
 data_frame_name[rows, columns] – Subset based on rows and columns
 
-[FIXME add table image]
+![subsetting dataframe 3](../fig/04.10-subsetting-dataframe.10.jpg)
 
-[FIXME add code image]
+![subsetting dataframe 4](../fig/04.11-subsetting-dataframe.jpg)
 
 ### **Help function:** 
 
 help(function_name) – Provides detailed description of function in help window (bottom right)
 E.g. Run the command help(sort) in the console
 
-[FIXME add help pane image]
+![help function](../fig/04.12-help-function.jpg)
 
 You will now get a complete description of the “sort” function in the help window
 
@@ -303,8 +303,7 @@ x|y - OR operation
 
 Please note that in R the Boolean values “TRUE” & “FALSE” can also be written as “T” &”F”
 
-[FIXME add code image]
-
+![logical operators](../fig/04.13-logical-operators.jpg)
 
 
 {% include links.md %}
