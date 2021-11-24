@@ -236,7 +236,8 @@ lines – Draws the line describing the distribution
 
 Number of standard deviations the value is away from mean
 
-![zscore](../fig/5.18-z score.jpg)
+![zscore](../fig/5.18-zscore.jpg)
+
 
 For a random normal distribution with mean 100 and standard deviation (sd) of 30 
 the z-score for a value of 76 and 136 can be calculated as, 
