@@ -17,7 +17,8 @@ The Deafult dataset of cars and colleges will be used to conduct the different a
 - Understand the R interface
 - learn about the data types and data structures
 - learn about logical operators 
-<br>
+
+
 > ## Pre-requisites
 > __STOP:__ before starting this workshop, please attend the following Digital Scholarship Lab workshop(s) before completing this one:
 > * [Workshop Title Here](https://researchguides.uic.edu/hub/workshops)  
