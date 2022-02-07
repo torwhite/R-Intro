@@ -120,6 +120,7 @@ z
 {: .output}
 
 ## Data Structure
+
 ### Vector
 
 Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. The type of data inside a vector can be determined by using the **type of()** function and the length (or) number of elements in a vector can be found with the **length()** function. 
@@ -134,7 +135,9 @@ A vector will always **contain** data of the **same data type**. If a vector con
 - Integers (Round whole numbers) 
 
 ~~~
-# input codv1 <- c(1, 2, 3, 4, 5)
+# input code
+
+v1 <- c(1, 2, 3, 4, 5)
 v1
 is.vector(v1)
 
