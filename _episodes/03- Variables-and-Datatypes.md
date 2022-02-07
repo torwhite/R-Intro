@@ -212,12 +212,13 @@ In sqrt(-3) : NaNs produced
 ### Numeric Data Type 
 
 -	This data type is for numeric values which contain numbers with or without a decimal point,
--
+
 -	This is the default number data type in R 
--	
-Example: - 1, 20.5, -97.05, -65 
+	
+ Example: - 1, 20.5, -97.05, -65 
 
 ~~~
+
 # input code
 # Assigning a decimal value to variable x
 x <- 15.6
@@ -262,7 +263,6 @@ typeof(x3)
 > typeof(x1)
 [1] "double"
 > 
-> 
 > # Converting an integer value to numeric type
 > x2 <- 22L
 > class(x2)
@@ -289,6 +289,7 @@ typeof(x3)
 Example – 5, 102, 600, 1003.
 
 ~~~
+
 # input code
 x <-  18L # putting capital 'L' after a value forces it to be
 # stored as Integer.
@@ -335,7 +336,7 @@ m
 class(m)
 
 ~~~
-{: .language-r}'
+{: .language-r}
 
 ~~~
 # output
