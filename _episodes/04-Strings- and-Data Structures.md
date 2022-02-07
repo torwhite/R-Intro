@@ -1,8 +1,9 @@
 ---
-title: " Intoduction to data structures"
+title: " Intoduction to strings and data structures"
 questions:
 - "Key question (FIXME)"
 objectives:
+-"understand basics of strings and string manipulation"
 - " understanding different data structure"
 - "learn about functions of each data structure"
 
@@ -11,60 +12,193 @@ keypoints:
 ---
 FIXME
 
-### **1. VECTORS**
-Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. 
-The type of data inside a vector can be determined by using **typeof()** function and the length (or)
-number of elements in a vector can be found with **length()** function. 
+## Strings 
 
-R uses one indexing, hence the position of the first component in a vector can be accessed by,**vector_name[1]**
- ~~~
- > x <- C (9,8,7,6)
- > x
- [1] 9,8,7,6
- > type of (x)
- [1] "double"
- > lenght (x)
- [1] 4
- > x [1]
- [1] 9
-  > x [3]
- [1] 7
- 
- ~~~
-{: .language-r}
- 
- 
+- Strings are made of a single character or contain a collection of characters.
+-
+- Strings can be created by either single quotes (‘ ‘) or double quotes (“ “)
 
-A vector will **always** contain data of same data type. If a vector contains multiple data types 
-the vector will convert all its values to the same data type in the below order of precedence: 
+**Rule for String in R**
 
-• Character 
+-	String starts and ends with a single quote. Double quotes (“ “), and through the escape sequence (‘/’), single quote can become a part of the string.
+Example- ‘buses’, ‘merry”s’, ‘ merry\’s’
 
-• Double (Float / Decimals) 
+-	String start and end with a double quote. Single quote (‘ ‘), and through the escape sequence (‘\’), double quote can become a part of the string 
+Example : “buses”, “merry’s”, “ merry\”s”
 
-• Integers (Round whole numbers)
 ~~~
- > x <- c(9,8,7,6.32)
- > x
- [1] 9,8,7,6.32
- > type of (x)
- [1] "double"
- 
- > x <- c(9,8, "Hello")
- > x [1]
- [1] "9" "8" "Hello"
- > type of (x) 
- [1] "character"
- 
- > x <- c(3:6)
- > x
- [1] 3,4,5,6
- > type of (x)
- [1] "integer"
+# input code string concatenation 
+Count number of characters in string
+x1 <- "Olivia"
+x2 <- "Jhon"
+x3 <- "William"
 
- ~~~
+#checking number of characters
+nchar(x1)
+nchar(x2)
+nchar(x3)
+
+# Letters using vector function in R
+# Check the sequence of letters
+letters
+letters[4]
+letters[1:5]
+
+# String Concatenation
+# Paste function is used with syntax below:
+# paste(..., sep = " ", collapse = NULL)
+
+x <- paste("Hello","World", "!", sep = " ", collapse = "--")
+x
+
+y <- paste(x1, x2, x3, "is happy.")
+y
+
+z<- paste("Hello","everyone","!", sep =" ")
+z
+
+x4 <- c("Olivia", "Jhoin", "William")
+y1 <- paste(x4, "is happy.")
+y1
+
+y2 <- paste(x4, "is happy.", collapse = " -- ")
+y2
+
+z1 <- c("Please bring me", "a few ")
+z2 <- c("some vegetables", "fruits")
+z <- paste(z1, z2, collapse = " and ")
+z
+~~~
 {: .language-r}
- 
+
+~~~
+# output
+> x1 <- "Olivia"
+> x2 <- "Jhon"
+> x3 <- "William"
+> 
+> #checking number of characters
+> nchar(x1)
+[1] 6
+> nchar(x2)
+[1] 4
+> nchar(x3)
+[1] 7
+> # Letters using vector function in R
+> # Check the sequence of letters
+> letters
+ [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x"
+[25] "y" "z"
+> letters[4]
+[1] "d"
+> letters[1:5]
+[1] "a" "b" "c" "d" "e"
+> # String Concatenation
+> # Paste function is used with syntax below:
+> # paste(..., sep = " ", collapse = NULL)
+> x <- paste("Hello","World", "!", sep = " ", collapse = "--")
+> x
+[1] "Hello World !"
+> z<- paste("Hello","everyone","!", sep =" ")
+> z
+[1] "Hello everyone !"
+> y <- paste(x1, x2, x3, "is happy.")
+> y
+[1] "Olivia Jhon William is happy."
+> x4 <- c("Olivia", "Jhoin", "William")
+> y1 <- paste(x4, "is happy.")
+> y1
+[1] "Olivia is happy."  "Jhoin is happy."   "William is happy."
+> y2 <- paste(x4, "is happy.", collapse = " -- ")
+> y2
+[1] "Olivia is happy. -- Jhoin is happy. -- William is happy."
+> z1 <- c("Please bring me", "a few ")
+> z2 <- c("some vegetables", "fruits")
+> z <- paste(z1, z2, collapse = " and ")
+> z
+[1] "Please bring me some vegetables and a few  fruits"
+> 
+~~~
+{: .output}
+
+## Data Structure
+### Vector
+Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. The type of data inside a vector can be determined by using the **type of()** function and the length (or) number of elements in a vector can be found with the **length()** function. 
+
+R uses **one indexing** unlike python, hence the position of the first component in a vector can be accessed by vector name [1]
+
+A vector will always **contain** data of the **same data type**. If a vector contains multiple data types the vector will convert all its values to the same data type in the below order of precedence:
+- Character 
+
+- Double (Float / Decimals)
+
+- Integers (Round whole numbers) 
+
+~~~
+# input codv1 <- c(1, 2, 3, 4, 5)
+v1
+is.vector(v1)
+
+v2 <- c("a", "b", "c")
+v2
+is.vector(v2)
+
+v3 <- c (TRUE, TRUE, FALSE, FALSE, TRUE)
+v3
+is.vector(v3)
+
+v4<- c (TRUE, TRUE, "a", 5)
+v4 
+typeof(v4)
+
+v1 <- c(1, 2, 3, 4, 5)
+v1
+is.vector(v1)
+
+v2 <- c("a", "b", "c")
+v2
+is.vector(v2)
+
+v3 <- c (TRUE, TRUE, FALSE, FALSE, TRUE)
+v3
+is.vector(v3)
+
+v4<- c (TRUE, TRUE, "a", 5)
+v4 
+typeof(v4)
+
+~~~
+{: .language-r}
+
+~~~
+# output
+> v1 <- c(1, 2, 3, 4, 5)
+> v1
+[1] 1 2 3 4 5
+> is.vector(v1)
+[1] TRUE
+> 
+> v2 <- c("a", "b", "c")
+> v2
+[1] "a" "b" "c"
+> is.vector(v2)
+[1] TRUE
+> 
+> v3 <- c (TRUE, TRUE, FALSE, FALSE, TRUE)
+> v3
+[1]  TRUE  TRUE FALSE FALSE  TRUE
+> is.vector(v3)
+[1] TRUE
+> 
+> v4<- c (TRUE, TRUE, "a", 5)
+> v4 
+[1] "TRUE" "TRUE" "a"    "5"   
+> typeof(v4)
+[1] "character"
+> 
+
+~~~
+{: .output}
 
 
 #### **Analyzing a Vector**
@@ -78,20 +212,6 @@ is.na(vector_name) - Checks if each element of vector is “NA”
 is.null(vector_name) - Checks if the entire vector is empty 
 
 length(vector_name) - Number of elements present inside the vector
-
-Syntax:
-
-~~~
-> x <- c(1,2,3,4)
-> class (x)
-[1] "numeric"
-> str (x)
-num [1:4] 1 2 3 4 
-> length (x)
-[1] 4
-
-~~~
-{: .language-r}
 
 ![analyzing vector](../fig/04.1-analyzing-a-vector.jpg)
 
@@ -125,6 +245,7 @@ vector_name[-c(1,4)] - All elements except those at positions 1 & 4 in the vecto
 
 ~~~
 {: .language-r}
+
 #### **Sorting a vector**
 
 Sorting of a vector can be performed using two different functions
@@ -135,175 +256,6 @@ sort(vector) - Sorts the vector numerically or alphabetically based on vector ty
 order(vector) - Returns the indices of the vector in the order they would appear when 
                 the vector is sorted (ascending by default)
                 
-![sorting vector](../fig/04.2-Sorting-vector.jpg)
 
 
-### **2. DATA FRAME** 
 
-Data frames are used for storing Data tables in R. They are two-dimensional array structure and
-are similar to tables where each column represents one variable. The main features to note about 
-a data frame are: 
-
-• Columns can be of different data types
-
-• Each column name must be unique 
-
-• Each column should be of same length i.e. contain the same number of elements
-
-Data frames in R can be created in two ways: 
-
-• Using data.frame() command 
-
-• Importing data from files such as .csv, .xlsx etc.
-
-**data.frame() FUNCTION:**
-
-While using the command we can follow the below syntax 
-    data.frame( column_1, column_2, column_3, …………………….) 
-    
-Make sure that the names of the columns are unique and are of same length.
-
-Syntax:
-
-~~~
-> Numbers = c(1,2,3,4)
-> Alphabets = c("A", "B", "C","D")
-> Boolean = c( TRUE, FALSE, TRUE, TRUE)
-> df = data.frame(Numbers, Alphabets, Boolean)
-> class(df)
-[1]  "data.frame"
-
-df
-Numbers     Alphabets    Boolean
-      1             A       TRUE
-      2             B      FALSE
-      3             C       TRUE
-      4             D       TRUE
-      
-~~~
-{: .language-r}
-
-
-IMPORTING DATA: There are multiple commands with various arguments to import data from different file formats 
-into R environment. I shall show the simplest command to import a csv file as a data frame 
-
-data_frame_name <- read.csv(file.choose(), header = T) 
-
-Here, file.choose() - Allows you to choose a .csv file stored in your local desktop, 
-header = T - Indicates the first column in the file contains column names
-
-![importing data frame](../fig/04.3-importing-data-frame.jpg)
-
-Double click (or) click once and select open on your desired file to import
-
-Once the data has been imported successfully the data frame would be visible with its 
-name in the Environment part on the top right
-
-![environment pane](../fig/04.4-environment-pane.jpg)
-
-
-
-### **Analyzing a data frame:** 
-
-dim(data_frame) - Dimensions of the data frame in the order of (row columns) 
-
-ncol(data_frame) - Number of columns 
-
-nrow(data_frame) - Number of rows 
-
-str(data_frame) - Structure of the data frame 
-
-names(data_frame)    - Names of the columns
-colnames(data_frame)
-
-rownames(data_frame) - Names of the rows
-
-![analyzing data](../fig/04.5-analyzing-a-data-frame.jpg)
-
-![analyzing data](../fig/04.6-analyzing-data-frame.jpg)
-
-head(data_frame, n) - Data present in the first n rows of data frame (n=6 by default) 
-
-tail(data_frame, n) - Data present in the last n rows of data frame (n=6 by default)
-
-![head and tail of dataframe](../fig/04.7-head-and-tail-of-dataframe.jpg)
-
-### **Subsetting a data frame:**
-data_frame[1] - Display only first column 
-
-data_frame[c(1,4)] - Display only column one & four 
-
-data_frame[-c(1,4)] - Display all columns except one & four 
-
-data_frame[c(1:4)] - Display columns one to four
-
-![subsetting dataframe](../fig/04.8-Subsetting-a-data-frame.jpg)
-
-#### **Consider a dataframe created with the below commands:**
-Numbers = c(1, 2, 3, 4) 
-
-Alphabets = c("A", "B", "C", "D") 
-
-Boolean = c(TRUE, FALSE, TRUE, TRUE) 
-
-Float = c(1.1, 2.2, 3.3, 4.4) 
-
-df = data.frame(Numbers, Alphabets, Boolean, Float)
-
-df
-
-![subsetting data frame 2](../fig/04.9-subsetting-a-data-frame-.jpg)
-
-data_frame_name[rows, columns] – Subset based on rows and columns
-
-![subsetting dataframe 3](../fig/04.10-subsetting-dataframe.10.jpg)
-
-![subsetting dataframe 4](../fig/04.11-subsetting-dataframe.jpg)
-
-### **Help function:** 
-
-help(function_name) – Provides detailed description of function in help window (bottom right)
-E.g. Run the command help(sort) in the console
-
-![help function](../fig/04.12-help-function.jpg)
-
-You will now get a complete description of the “sort” function in the help window
-
-Points to note:
-
-• If a function’s argument is not given any value (such as x in the above picture) in the help description, 
-this value must be compulsorily specified while running the function 
-
-• If a function’s argument is given a value (decreasing = FALSE in above pic) this value is the default value considered by R. 
-It needs to be specified compulsorily when the argument’s value needs to be different
-
-
-
-## **LOGICAL OPERATORS:** 
-
-Provides a list of Boolean results based on operation performed 
-
-< - Less than 
-
-<= - Less than or equal to 
-
->-Greater than 
-
->=-Greater than or equal to 
-
-== - Equal to 
-
-!= - Not equal to 
-
-x&y - AND operation 
-
-x|y - OR operation
-
-!x - NOT operation
-
-Please note that in R the Boolean values “TRUE” & “FALSE” can also be written as “T” &”F”
-
-![logical operators](../fig/04.13-logical-operators.jpg)
-
-
-{% include links.md %}
