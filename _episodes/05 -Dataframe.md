@@ -33,6 +33,7 @@ data. Frame (column_1, column_2, column_3, …………………….)
 
 Make sure that the names of the columns are unique and are of the same length.
 
+### Creating a data frame
 ~~~
 # input code
 
@@ -45,14 +46,19 @@ student.data <- data.frame(
 
 # Display the dataframe student.data
 student.data
+
 # Check the structure of the dataframe student.data
 str(student.data)
+
 # Check the summary of the dataframe student.data
 summary(student.data)
+
 # Check the length of the dataframe student.data
 length(student.data)
+
 # Check dimension of the dataframe (Row/Column)
 dim(student.data)
+
 # Check number of row/columns individually.
 ncol(student.data)
 nrow(student.data)
@@ -99,6 +105,7 @@ write.csv(user.data,"user.csv", row.names = FALSE)
 3      3   Olivia      74.6
 4      4    Steve      80.0
 5      5    David      95.0
+
 > # Check the structure of the dataframe student.data
 > str(student.data)
 'data.frame':	5 obs. of  3 variables:
@@ -114,12 +121,15 @@ write.csv(user.data,"user.csv", row.names = FALSE)
  Mean   :3                      Mean   :86.56  
  3rd Qu.:4                      3rd Qu.:95.00  
  Max.   :5                      Max.   :98.40  
+ 
 > # Check the length of the dataframe student.data
 > length(student.data)
 [1] 3
+
 > # Check dimension of the dataframe (Row/Column)
 > dim(student.data)
 [1] 5 3
+
 > # Check number of row/columns individually.
 > ncol(student.data)
 [1] 3
@@ -140,6 +150,7 @@ $row.names
 > 
 > 
 > # Create a dataframe for user data containing their
+
 > # IDs, Names, Age and heights in cm.
 > user.data <- data.frame(
 +    user.sn = c(1:5),
