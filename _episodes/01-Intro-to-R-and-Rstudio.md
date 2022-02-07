@@ -46,9 +46,9 @@ The preferences tab in the toolbar helps customize the margins, displays, and fo
 ## Help and Cheatsheets in RStudio 
 
 help(function_name) – Provides detailed description of function in help window (bottom right) 
-E.g., Run the command help(sort) in the console.
+E.g., Run the command **help(sort)** in the console.
 
-KASTURI FINISH HERE
+![Help Rstudio](../fig/01-Help-rstudio.PNG)
 
 You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
 {% include links.md %}
