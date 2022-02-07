@@ -50,5 +50,15 @@ E.g., Run the command **help(sort)** in the console.
 
 ![Help Rstudio](../fig/01-Help-rstudio.PNG)
 
+You will now get a complete description of the “sort” function in the help window 
+Points to note: 
+
+- If a function’s argument is not given any value (such as x in the above picture) in the help description, this value must be compulsorily specified while running the function 
+- If a function’s argument is given a value (decreasing = FALSE in above pic) this value is the default value considered by R. It needs to be specified compulsorily when the argument’s value needs to be different.
+
+**Cheatsheet** – In the wild and woolly world of R there are many packages and to summarize this package functions the cheat sheets come in handy. These cheat sheets are invaluable as learning tools. RStudio has created a large number of cheat sheets, including the one-page R Markdown cheat sheet, which is freely available [here](https://www.rstudio.com/resources/cheatsheets/)
+
+
+
 You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
 {% include links.md %}
