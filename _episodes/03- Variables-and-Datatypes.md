@@ -125,7 +125,9 @@ full_name
 
 -	R supports a set of all complex numbers and also stores numbers with an imaginary component.
 Examples: 1+3i, 5i, 5- 9i
+
 ~~~
+
 # input code
 # Assign complex value to x
 x <- 10 + 6i + 20
