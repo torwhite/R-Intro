@@ -51,12 +51,11 @@ The Deafult dataset of cars and colleges will be used to conduct the different a
 
 ## Survey
 
-Thank you for attending this workshop or reading through the workshop material! If you could take 3-5 min to [respond to our survey](add link to workshop survey), we can continue to improve this workshop. We appreciate any and all feedback!
+Thank you for attending this workshop or reading through the workshop material! If you could take 3-5 min to [respond to our survey](https://uic.ca1.qualtrics.com/jfe/form/SV_9ZSeKYXAdrFRbWC), we can continue to improve this workshop. We appreciate any and all feedback!
 
 
 ## Next Up...
 Check out these workshops after you've completed this one:
-1. [R intermediate workshop ]()
 2. [R Tidyverse]()
 3. [R Data Pre-Processing]()
 4. [R Advanced Data Visualization]()
