@@ -280,6 +280,16 @@ typeof(x3)
 ~~~
 {: .output}
 
+### Integer Data Type 
+
+-	Integer data type stores non-decimal values.
+
+-	The as. integer () function can be used to convert a number into integer type data in R.
+
+Example – 5, 102, 600, 1003.
+
+
+
 
 
 
