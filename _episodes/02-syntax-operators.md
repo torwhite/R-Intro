@@ -9,7 +9,7 @@ objectives:
 keypoints:
 
 ---
-
+## R syntax and Logical operators 
 Codes can be directly run in the R console. Try running the below code to perform basic 
 arithmetic operations of Addition (+), Subtraction (-), Multiplication (*), Division (/) and Modulo (%%) 
 operation directly in the console.
@@ -83,6 +83,19 @@ Once a variable is created it will be visible under the environment section
 One thing to be aware of is that R is **case-sensitive**. Hence variable “a” is different from “A”
 
 ![error message](../fig/02-error-messgae.jpg)
+
+### LOGICAL OPERATORS
+Provides a list of Boolean results based on operation performed 
+< - Less than
+ <= - Less than or equal to 
+> - Greater than
+ >= - Greater than or equal to 
+== - Equal to
+! = - Not equal to
+ x&y - AND operation
+ x|y - OR operation 
+!x - NOT operation
+Please note that in R the Boolean values “TRUE” & “FALSE” can also be written as “T” &” F”.
 
 
 
