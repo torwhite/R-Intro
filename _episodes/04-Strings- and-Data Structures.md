@@ -1,16 +1,14 @@
 ---
-title: " Intoduction to strings and data structures"
-questions:
-- "Key question (FIXME)"
+title: "Intoduction to strings and data structures "
+
 objectives:
 -"understand basics of strings and string manipulation"
 - " understanding different data structure"
 - "learn about functions of each data structure"
-
 keypoints:
-- "understanding difference between data structures"
+- "understanding strings and vectors"
+
 ---
-FIXME
 
 ## Strings 
 
