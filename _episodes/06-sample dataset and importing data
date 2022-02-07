@@ -1,0 +1,22 @@
+---
+title: "Introduction to R and R studio "
+time: 0
+objectives:
+- "Understand the basics of R and R studio "
+- "learn about the Rstudio Interface"
+keypoints:
+- "First key point. Brief Answer to questions. (FIXME)"
+---
+
+## R
+R is a specialized language most commonly used for statistical computing, data analysis, and implementing graphics. It is open-source and free. R Language is widely used by statisticians and data miners for developing statistical software and data analysis. It helps to perform data wrangling, analyzing, and visualizing data easily.
+
+### Why use R 
+- R is a very easy and powerful tool for any statistical operations which can also easily be learned by any person even from a non-technical background.
+-	R offers a variety of packages each of which helps you perform different functions. As of 2021, there are **18839** available packages in R the list of which can be found [here](https://cran.r-project.org/web/packages/available_packages_by_name.html). 
+-	R provides a wide variety of statistical (linear and nonlinear modeling, classical statistical tests (e.g., probability, std deviation, etc.), time series analysis, classification, clustering,) and graphical techniques and is highly extensible.
+
+Based on the 2021 survey conducted by Kaggle, R was the third most used programming language by data professionals
+
+
+![Programming language use chart](../fig/01-use-statistics.png)
