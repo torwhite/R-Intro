@@ -121,6 +121,7 @@ z
 
 ## Data Structure
 ### Vector
+
 Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. The type of data inside a vector can be determined by using the **type of()** function and the length (or) number of elements in a vector can be found with the **length()** function. 
 
 R uses **one indexing** unlike python, hence the position of the first component in a vector can be accessed by vector name [1]
@@ -211,7 +212,40 @@ is.null(vector_name) - Checks if the entire vector is empty
 
 length(vector_name) - Number of elements present inside the vector
 
-![analyzing vector](../fig/04.1-analyzing-a-vector.jpg)
+~~~
+> x <- c(1,2,3,4)
+> class(x)
+[1] "numeric"
+> str(x)
+ num [1:4] 1 2 3 4
+> length(x)
+[1] 4
+> 
+> x<- c(1,2,3,4)
+> is.na(x)
+[1] FALSE FALSE FALSE FALSE
+> is.null(x)
+[1] FALSE
+> 
+> x<- c(TRUE, FALSE, TRUE, TRUE)
+> class(x)
+[1] "logical"
+> str(x)
+ logi [1:4] TRUE FALSE TRUE TRUE
+> length(x)
+[1] 4
+> 
+> x<- c(1,2,3,4,NA)
+> is.na(x)
+[1] FALSE FALSE FALSE FALSE  TRUE
+> x<- c()
+> is.null(x)
+[1] TRUE
+
+~~~
+{: .language-r}
+
+
 
 ####  **Subsetting a vector**
 
@@ -253,6 +287,25 @@ sort(vector) - Sorts the vector numerically or alphabetically based on vector ty
 
 order(vector) - Returns the indices of the vector in the order they would appear when 
                 the vector is sorted (ascending by default)
+                
+~~~
+> x<- c("D","B","A","E","C")
+> sort(x)
+[1] "A" "B" "C" "D" "E"
+> order(x)
+[1] 3 2 5 1 4
+> x[order(x)]
+[1] "A" "B" "C" "D" "E"
+> sort (x, decreasing = TRUE)
+[1] "E" "D" "C" "B" "A"
+> order(x, decreasing = TRUE)
+[1] 4 1 5 2 3
+> x[order(x, decreasing = TRUE)]
+[1] "E" "D" "C" "B" "A"
+
+~~~
+{: .language-r}
+
                 
 
 
