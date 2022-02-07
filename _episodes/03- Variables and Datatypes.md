@@ -64,29 +64,7 @@ class(charac)
 charac_1 <- 'b'
 charac_1
 class(charac_1)
-~~~
-{: .language-r}
 
-~~~
-# output
-# Declaring character value with double quotes ""
-> charac <- "Abcd"
-> charac
-[1] "Abcd"
-> class(charac)
-[1] "character"
- # Declaring character value with single quotes ''
-> charac_1 <- 'b'
-> charac_1
-[1] "b"
-> class(charac_1)
-[1] "character"
-
-~~~
-{: .output}
-
-~~~
-#input code 
 #Convert values to character data type.
 pi_value <- 3.14
 x <- as.character(pi_value)
@@ -107,6 +85,19 @@ full_name
 
 ~~~
 # output
+# Declaring character value with double quotes ""
+> charac <- "Abcd"
+> charac
+[1] "Abcd"
+> class(charac)
+[1] "character"
+ # Declaring character value with single quotes ''
+> charac_1 <- 'b'
+> charac_1
+[1] "b"
+> class(charac_1)
+[1] "character"
+
 > #Convert values to character data type.
 > pi_value <- 3.14
 > x <- as.character(pi_value)
@@ -127,9 +118,6 @@ full_name
 
 ~~~
 {: .output}
-
-
-
 
 
 
