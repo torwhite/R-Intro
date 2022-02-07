@@ -85,6 +85,50 @@ class(charac_1)
 ~~~
 {: .output}
 
+~~~
+#input code 
+#Convert values to character data type.
+pi_value <- 3.14
+x <- as.character(pi_value)
+x
+class(x)
+
+# Concatenation of Character
+first name <- "Kasturi "
+last name <- "Acharya"
+
+# Character Value Concatenation
+# Paste function is used to concatenate characters
+full_name <- paste (first_name, last_name)
+full_name
+
+~~~
+{: .language-r}
+
+~~~
+# output
+> #Convert values to character data type.
+> pi_value <- 3.14
+> x <- as.character(pi_value)
+> x
+[1] "3.14"
+> class(x)
+[1] "character"
+> 
+> # Concatenation of Character
+> first_name <- "Kasturi"
+> last_name <- "Acharya"
+> 
+> # Character Value Concatenation
+> # Paste function is used to concatenate characters
+> full_name <- paste (first_name,last_name)
+> full_name
+[1] "Kasturi Acharya"
+
+~~~
+{: .output}
+
+
 
 
 
