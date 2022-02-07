@@ -288,6 +288,208 @@ typeof(x3)
 
 Example – 5, 102, 600, 1003.
 
+~~~
+# input code
+x <-  18L # putting capital 'L' after a value forces it to be
+# stored as Integer.
+class(x)
+
+
+y <-  9
+class(y)
+
+
+x1 <-  23.0L
+x1 <-  23L
+class(x1)
+
+
+# Using integer function to declare an Integer type value 
+y1 <-  as.integer(44)
+class(y1)
+
+#coerce a numeric value into integer
+y2 <-  as.integer(45.2)
+y2
+
+#Parse a string (coerce a decimal string)
+y3 <- as.integer("8.65")
+class(y3)
+
+#Convert Logical States to Integer
+Logic_True <- as.integer(TRUE)
+Logic_True
+
+Logic_False <- as.integer(FALSE)
+Logic_False
+
+# To check if the value is integer type:
+is.integer(x)
+is.integer(y)
+is.integer(y1)
+
+
+#Creating integer vector from 1 to 5
+m = 1:5
+m
+class(m)
+
+~~~
+{: .language-r}'
+
+~~~
+# output
+> 
+> x <-  18L # putting capital 'L' after a value forces it to be
+> # stored as Integer.
+> class(x)
+[1] "integer"
+> 
+> 
+> y <-  9
+> class(y)
+[1] "numeric"
+> 
+> 
+> x1 <-  23.0L
+Warning message:
+integer literal 23.0L contains unnecessary decimal point 
+> x1 <-  23L
+> class(x1)
+[1] "integer"
+> 
+> 
+> # Using integer function to declare an Integer type value 
+> y1 <-  as.integer(44)
+> class(y1)
+[1] "integer"
+> 
+> #coerce a numeric value into integer
+> y2 <-  as.integer(45.2)
+> y2
+[1] 45
+> 
+> #Parse a string (coerce a decimal string)
+> y3 <- as.integer("8.65")
+> class(y3)
+[1] "integer"
+> 
+> #Convert Logical States to Integer
+> Logic_True <- as.integer(TRUE)
+> Logic_True
+[1] 1
+> 
+> Logic_False <- as.integer(FALSE)
+> Logic_False
+[1] 0
+> 
+> # To check if the value is integer type:
+> is.integer(x)
+[1] TRUE
+> is.integer(y)
+[1] FALSE
+> is.integer(y1)
+[1] TRUE
+> 
+> 
+> #Creating integer vector from 1 to 5
+> m = 1:5
+> m
+[1] 1 2 3 4 5
+> class(m)
+[1] "integer"
+> 
+~~~
+{: .output}
+
+~~~
+# input code
+# BONUS
+#Integers value can be a maximum 2147483647 (2 billion)
+.Machine$integer.max 
+
+#Double value can be a maximum 1.797693e+308 (very much > than 2B)
+.Machine$double.xmax 
+
+~~~
+{: .language-r}
+
+### Logical Data Type 
+-	This data type stores logical or Boolean values which are often generated as a result of logical operations.
+-	
+Example – True, False
+
+~~~
+# input code
+x <- TRUE
+y<- FALSE
+
+x1 <- T
+y1 <- F
+
+typeof(x1)
+mode(x1)
+
+####################
+# Value Comparison #
+####################
+
+# Less Than and Greater Than Comparison
+32 < 98  # TRUE Statement
+37 > 52  # FALSE Statement
+87 <= 92 # TRUE Statement
+1 >= 9   # FALSE Statement
+
+# Equal TO Comparison
+57 == 34  # FALSE Statement
+80 == 80  # TRUE Statement
+"hi" == "hi" # TRUE Statement
+
+~~~
+{: .language-r}
+
+~~~
+# output
+ x <- TRUE
+> y<- FALSE
+> 
+> x1 <- T
+> y1 <- F
+> typeof(x1)
+[1] "logical"
+> mode(x1)
+[1] "logical"
+
+> # Value Comparison #
+>
+> # Less Than and Greater Than Comparison
+> 32 < 98  # TRUE Statement
+[1] TRUE
+> 37 > 52  # FALSE Statement
+[1] FALSE
+> 87 <= 92 # TRUE Statement
+[1] TRUE
+> 1 >= 9   # FALSE Statement
+[1] FALSE
+> 
+> # Equal TO Comparison
+> 57 == 34  # FALSE Statement
+[1] FALSE
+> 80 == 80  # TRUE Statement
+[1] TRUE
+> "hi" == "hi" # TRUE Statement
+[1] TRUE
+
+~~~
+{: .output}
+
+
+
+
+
+
+
+
 
 
 
