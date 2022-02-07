@@ -83,23 +83,23 @@ One thing to be aware of is that R is **case-sensitive**. Hence variable “a”
 
 ### LOGICAL OPERATORS
 Provides a list of Boolean results based on operation performed 
-< Less than
+- < Less than
 
-<= Less than or equal to 
+- <= Less than or equal to 
 
->  Greater than
+- >  Greater than
 
->=  Greater than or equal to
+- >=  Greater than or equal to
  
-==  Equal to
+- ==  Equal to
 
-! = Not equal to
+- ! = Not equal to
 
-x&y  AND operation
+- x&y  AND operation
 
-x|y  OR operation 
+- x|y  OR operation 
 
-!x  NOT operation
+- !x  NOT operation
 
 Please note that in R the Boolean values “TRUE” & “FALSE” can also be written as “T” &” F”.
 
