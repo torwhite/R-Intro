@@ -60,6 +60,7 @@ Example- “A”, “2.21”, “skill@”.
 charac <- "Abcd"
 charac
 class(charac)
+
 # Declaring character value with single quotes ''
 charac_1 <- 'b'
 charac_1
@@ -91,6 +92,7 @@ full_name
 [1] "Abcd"
 > class(charac)
 [1] "character"
+
  # Declaring character value with single quotes ''
 > charac_1 <- 'b'
 > charac_1
