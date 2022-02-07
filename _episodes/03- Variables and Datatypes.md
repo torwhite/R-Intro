@@ -121,6 +121,96 @@ full_name
 ~~~
 {: .output}
 
+### Complex data type 
+
+-	R supports a set of all complex numbers and also stores numbers with an imaginary component.
+Examples: 1+3i, 5i, 5- 9i
+~~~
+# input code
+# Assign complex value to x
+x <- 10 + 6i + 20
+x
+class(x)
+z <- 6i
+z
+class(z)
+
+#Using as.complex() function to convert value to complex.
+as.complex(5)
+as.complex(7i)
+
+# Square root function on complex numbers
+#Find the square root of -3+0i
+sqrt (-3) 
+
+#Typing in the complete value
+sqrt(-1+0i) 
+
+#Coerce to complex value
+sqrt (as.complex (-1))
+
+
+#Performing Addition on Complex Numbers
+y1 <- 7+3i
+y2 <- 8+9i
+sum_y <- y1+y2
+sum_y
+class(sum_y)
+
+~~~
+{: .language-r}
+
+~~~
+# output
+> # Assign complex value to x
+> x <- 10 + 6i + 20
+> x
+[1] 30+6i
+> class(x)
+[1] "complex"
+> z <- 6i
+> z
+[1] 0+6i
+> class(z)
+[1] "complex"
+
+> #Using as.complex() function to convert value to complex.
+> as.complex(5)
+[1] 5+0i
+> as.complex(7i)
+[1] 0+7i
+> 
+> # Square root function on complex numbers
+> #Find the square root of -3+0i
+> sqrt (-3) 
+[1] NaN
+Warning message:
+In sqrt(-3) : NaNs produced
+> 
+> #Typing in the complete value
+> sqrt(-1+0i) 
+[1] 0+1i
+> 
+> #Coerce to complex value
+> sqrt (as.complex (-1))
+[1] 0+1i
+> 
+> 
+> #Performing Addition on Complex Numbers
+> y1 <- 7+3i
+> y2 <- 8+9i
+> sum_y <- y1+y2
+> sum_y
+[1] 15+12i
+> class(sum_y)
+[1] "complex"
+> 
+
+~~~
+{: .output}
+
+
+
 
 
 
