@@ -58,6 +58,8 @@ Points to note:
 
 **Cheatsheet** – In the wild and woolly world of R there are many packages and to summarize this package functions the cheat sheets come in handy. These cheat sheets are invaluable as learning tools. RStudio has created a large number of cheat sheets, including the one-page R Markdown cheat sheet, which is freely available [here](https://www.rstudio.com/resources/cheatsheets/)
 
+![Cheatsheet](../fig/01-cheatsheet.PNG)
+
 
 
 You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
