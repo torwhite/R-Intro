@@ -2,21 +2,68 @@
 title: "sample dataset and importing data in R studio"
 time: 0
 objectives:
-- "Understand the basics of R and R studio "
-- "learn about the Rstudio Interface"
+- " learning how to use the sample dataset"
+- "understanding how to import data in R studio"
+- 
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 
-## R
-R is a specialized language most commonly used for statistical computing, data analysis, and implementing graphics. It is open-source and free. R Language is widely used by statisticians and data miners for developing statistical software and data analysis. It helps to perform data wrangling, analyzing, and visualizing data easily.
+## Sample Dataset 
 
-### Why use R 
-- R is a very easy and powerful tool for any statistical operations which can also easily be learned by any person even from a non-technical background.
--	R offers a variety of packages each of which helps you perform different functions. As of 2021, there are **18839** available packages in R the list of which can be found [here](https://cran.r-project.org/web/packages/available_packages_by_name.html). 
--	R provides a wide variety of statistical (linear and nonlinear modeling, classical statistical tests (e.g., probability, std deviation, etc.), time series analysis, classification, clustering,) and graphical techniques and is highly extensible.
+-	One of the great and easiest ways to start experimenting with the analysis in R is by means of built-in sample datasets available in R. These datasets are available in their own package. 
 
-Based on the 2021 survey conducted by Kaggle, R was the third most used programming language by data professionals
+-	Use the code provided in the script to load the dataset and then toggle through help function to know the complete information of the dataset.
+
+~~~
+
+# INSTALL AND LOAD PACKAGES ################################
+
+# Load base packages manually
+library(datasets) # For example datasets
+?datasets
+library(help = "datasets")
+
+# SOME SAMPLE DATASETS #####################################
+
+# iris data
+?iris
+iris
+
+# UCBAdmissions
+?UCBAdmissions
+UCBAdmissions
+
+# Titanic
+? Titanic
+Titanic
+
+# state.x77
+?state.x77
+state.x77
+
+#swiss
+?swiss
+swiss
+
+# CLEAN UP #################################################
+
+# Clear environment
+rm(list = ls()) 
+
+# Clear packages
+detach("package:datasets", unload = TRUE)  # For base
+
+# Clear plots
+dev.off()  # But only if there IS a plot
+
+# Clear console
+cat("\014")  # ctrl+L
+
+~~~
+{: .language-r}
 
 
-![Programming language use chart](../fig/01-use-statistics.png)
+### Importing data 
+
+
