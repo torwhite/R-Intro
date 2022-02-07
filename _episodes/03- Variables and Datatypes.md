@@ -41,20 +41,52 @@ Removing a variable, the following command can be used rm ()
 
 ## **Data Types**
 
-![different datatype chart](../fig/03-different-datatype-chart.jpg)
+-	Data type in R specifies the size and type of information the variable will store.
+-
+-	R language has five main data types
 
-**1 )character** – Letter, words or strings which vary mostly and do not have any particular meaning for the data, e.g. Comments, Usernames
+![R Datatype](../fig/03-R-datatype.PNG)
 
-**2) Numeric** – Numbers which are continuous, e.g. Age, Temperature, Location coordinates
+### Character data type 
 
-**3) Factors** – Can be numeric/character but have only a fixed set of values, e.g. Age groups, Race
+-	Character data type stores value or strings and contains alphabets, numbers, and symbols
 
-  a) Nominal – The order of the factors does not matter since they have no significance, e.g. Country, Gender, Race
+-	Character data type value is written withing single (‘ ‘)or double inverted quotes (“ “) 
+Example- “A”, “2.21”, “skill@”.
 
-  b) Ordinal – These factors can be ordered since they hold a numerical significance, 
-e.g. Satisfaction rating (“extreme dislike”, “dislike”, “neutral”, “like”, “extreme like”)
+~~~
+# input code
+# Declaring character value with double quotes ""
+charac <- "Abcd"
+charac
+class(charac)
+# Declaring character value with single quotes ''
+charac_1 <- 'b'
+charac_1
+class(charac_1)
+~~~
+{: .language-r}
 
-![install package](../fig/03-install-package.jpg)
+~~~
+# output
+# Declaring character value with double quotes ""
+> charac <- "Abcd"
+> charac
+[1] "Abcd"
+> class(charac)
+[1] "character"
+ # Declaring character value with single quotes ''
+> charac_1 <- 'b'
+> charac_1
+[1] "b"
+> class(charac_1)
+[1] "character"
+
+~~~
+{: .output}
+
+
+
 
 
 
