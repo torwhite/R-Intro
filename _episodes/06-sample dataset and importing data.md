@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R and R studio "
+title: "sample dataset and importing data in R studio"
 time: 0
 objectives:
 - "Understand the basics of R and R studio "
