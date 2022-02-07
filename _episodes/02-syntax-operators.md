@@ -28,26 +28,6 @@ operation directly in the console.
  ~~~
 {: .language-r}
 
-## Another code example
-~~~
-# input code
-# Declaring character value with double quotes ""
-charac <- "Abcd"
-charac
-class(charac)
-~~~
-{: .language-r}
-
-~~~
-# output
-> charac <- "Abcd"
-> charac
-[1] "Abcd"
-> class(charac)
-[1] "character"
-~~~
-{: .output}
-
 Implementing the same code in the script area. If you do not see a file open in the script 
 area select **File → New File → R Script** from the menu and then type the code in the new file that appears.
 
