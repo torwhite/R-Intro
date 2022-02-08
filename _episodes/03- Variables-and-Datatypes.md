@@ -1,16 +1,13 @@
 ---
 title: "R packages and datatypes"
-teaching: 0
-exercises: 0
-questions:
-- "Key question (FIXME)"
+time: 0
+
 objectives:
 - "understand where to access packages for different functions"
 - "learn about the data types permitted for analysis in R studio"
 keypoints:
 - "importance of using packages in R studio for efficient data analysis"
 ---
-FIXME
 
 ## Variables
 
@@ -19,12 +16,19 @@ Variable is also known as **Identifier** because the variable name identifies th
 As we Know R is a case-sensitive language hence a variable ABC = 15 and Abc= 32 can have different values.
 
 ### Naming Variables
--	Variable name must start with “letter” and can contain a number, letter, underscore (_) and period (‘.’) e.g.- variableName1, one. variable 
+-	Variable name must start with “letter” and can contain a number, letter, underscore (\_) and period (‘.’) 
+```diff
++ variableName1, one.variable 
+```
 
--	Underscores (_) at the beginning of the variable name is not allowed. E.g.- _variable_one.
-
--	Periods (.) at the beginning of the variable name are allowed but should not be followed by a number eg - .1myvariable
- 
+-	Underscores (\_) at the beginning of the variable name is not allowed. 
+```diff
+- _variable_one.
+```
+-	Periods (.) at the beginning of the variable name are allowed but should not be followed by a number eg - 
+ ```diff
+ - .1myvariable
+ ```
 -	Reserved words or keywords are not allowed to be identified as a variable name.
 
 -	Special characters such as “#”, “&’, etc., along with white spaces (tabs, space) are not allowed in a variable name
