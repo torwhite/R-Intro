@@ -6,7 +6,7 @@ objectives:
 - "understanding how to import data in R studio"
 - 
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- ""
 ---
 
 ## Sample Dataset 
