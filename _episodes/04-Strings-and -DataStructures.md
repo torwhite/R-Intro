@@ -13,7 +13,6 @@ keypoints:
 ## Strings 
 
 - Strings are made of a single character or contain a collection of characters.
--
 - Strings can be created by either single quotes (‘ ‘) or double quotes (“ “)
 
 **Rule for String in R**
