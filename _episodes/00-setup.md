@@ -27,10 +27,10 @@ folder \_includes/install_instructions by using code seen below. Add or remove i
 ## Setup files:
 
 Please download the following files to particpate in the workshop:
-
+script file: 
 
 ## About the Data Used in this Workshop:
 
-The datasets used in this workshop are commosn "built-in" datasets in R, one  called cars and another called colleges. This means that the datasets are already pre-loaded in R and do not need to be imported from another source (csv, excel etc.). In the workshop, you will learn how to interact with these datasets.
+The datasets used in this workshop are common "built-in" datasets in R, one  called cars and another called colleges. This means that the datasets are already pre-loaded in R and do not need to be imported from another source (csv, excel etc.). In the workshop, you will learn how to interact with these datasets.
 
-{% include links.md %}
+
