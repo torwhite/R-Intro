@@ -13,10 +13,15 @@ keypoints:
 
 ## Software setup
 
+You will need to install R and RStudio to follow along during this workshop or access R and RStudio through the UIC Virtual lab. See instructions below
+
+This workshop will take place over Zoom, please make sure you can use Zoom through the Desktop application or browser before the workshop. See instructions and tips below for participating in the workshop on Zoom. 
+
 {% comment %} to add automated software install instructions, add instructions available in the install instructions 
 folder \_includes/install_instructions by using code seen below. Add or remove install instructions as needed. {% endcomment %}
 
 {% include install_instructions/r.html %}
+{% include install_instructions/virtual_lab.html %}
 {% include install_instructions/videoconferencing.html %}
 
 ## Setup files:
