@@ -1,5 +1,5 @@
 ---
-title: "Basic arithmatic functions "
+title: "R syntax and operators"
 teaching: 0
 exercises: 0
 
