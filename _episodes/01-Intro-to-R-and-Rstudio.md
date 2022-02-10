@@ -4,8 +4,7 @@ time: 0
 objectives:
 - "Understand the basics of R and R studio "
 - "learn about the Rstudio Interface"
-keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+
 ---
 
 ## R
@@ -62,5 +61,5 @@ Points to note:
 
 
 
-You can find the list of keyboard shortcuts for RStudio [FIXME LINK]
+
 {% include links.md %}
