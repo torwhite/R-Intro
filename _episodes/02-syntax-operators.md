@@ -76,7 +76,7 @@ Provides a list of Boolean results based on operation performed
 
 - x&y  AND operation
 
-- x|y  OR operation 
+- x\|y  OR operation 
 
 - !x  NOT operation
 
