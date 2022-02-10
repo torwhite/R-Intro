@@ -308,6 +308,97 @@ order(vector) - Returns the indices of the vector in the order they would appear
 ~~~
 {: .language-r}
 
+### Vector indexing 
+
+~~~
+# Vector Indexing Methods in R
+#   1. Logical Index Vector
+#   2. Positive-Integral Index Vector
+#   3. Negative-Integral Index Vector
+#   4. Character Index Vector
+
+# -----------------------------------------
+# 1. Logical Index Vector
+vec1 <- 12:17
+v_logindx <- vec1[c(F, F, T, F, T)]
+v_logindx
+
+# -----------------------------------------
+# 2. Positive-Integral Index Vectors
+vec2 <- 12:22
+
+# Accessing directly using a single index number
+x1 <- vec2[2]
+x1
+
+# Accessing using the c() function for multiple index values
+x2 <- vec2[c(2, 5, 7)]
+x2
+
+access_values <- c(2, 5, 7)
+x3 <- vec2[access_values]
+x3
+
+# ----------------------------------------
+# 3. Negative Integral Index Values
+x4 <- vec2[c(-1, -4, -3)]
+x4
+
+
+# ----------------------------------------
+# 4. Character Indexing
+vec_named <- c("Apple" = 1, "Banana" = 2, "Orange" = 5, "Pears" = 8)
+vec_named
+x5 <- vec_named[c("Banana", "Pears")]
+
+~~~
+{: .language-r}
+
+~~~
+> # 1. Logical Index Vector
+> vec1 <- 12:17
+> v_logindx <- vec1[c(F, F, T, F, T)]
+> v_logindx
+[1] 14 16
+> # -----------------------------------------
+> # 2. Positive-Integral Index Vectors
+> vec2 <- 12:22
+> 
+> # Accessing directly using a single index number
+> x1 <- vec2[2]
+> x1
+[1] 13
+> 
+> # Accessing using the c() function for multiple index values
+> x2 <- vec2[c(2, 5, 7)]
+> x2
+[1] 13 16 18
+> 
+> access_values <- c(2, 5, 7)
+> x3 <- vec2[access_values]
+> x3
+[1] 13 16 18
+> 
+> # ----------------------------------------
+> # 3. Negative Integral Index Values
+> x4 <- vec2[c(-1, -4, -3)]
+> x4
+[1] 13 16 17 18 19 20 21 22
+> 
+> 
+> # ----------------------------------------
+> # 4. Character Indexing
+> vec_named <- c("Apple" = 1, "Banana" = 2, "Orange" = 5, "Pears" = 8)
+> vec_named
+ Apple Banana Orange  Pears 
+     1      2      5      8 
+> x5 <- vec_named[c("Banana", "Pears")]
+> x5
+Banana  Pears 
+     2      8 
+     
+~~~
+{: .output}
                 
 
 
