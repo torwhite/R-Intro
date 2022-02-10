@@ -20,14 +20,8 @@ The Deafult dataset of cars and colleges will be used to conduct the different a
 
 
 > ## Pre-requisites
-> __STOP:__ before starting this workshop, please attend the following Digital Scholarship Lab workshop(s) before completing this one:
-> * [Workshop Title Here](https://researchguides.uic.edu/hub/workshops)  
->   
-> __OR__ make sure you're comfortable with the following concepts (study suggestions in parentheses)  
-> 
-> * Basic understanding of statistical analysis ([resource 1]())
-> 
-> 
+> There are no pre-requisites for this workshop, though basic understanding of working with data and statistics is recommended.
+
 {: .prereq}
 
 
