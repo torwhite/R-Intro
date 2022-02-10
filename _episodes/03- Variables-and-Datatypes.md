@@ -35,6 +35,7 @@ As we Know R is a case-sensitive language hence a variable ABC = 15 and Abc= 32 
 
 #### Variable Type in R 
 To know the type of the variable in R, we can use the following two functions
+
 -**mode ()** – is a mutually exclusive classification of objects according to their basic structure and is the basic building block for data objects in R. There are 6 basic atomic codes in R – logical, integer, real, complex, string (or character) and raw
 
 -**Type ()**- This returns the low-level value which matches the internal type of object in R. 
