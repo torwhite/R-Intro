@@ -4,9 +4,9 @@ teaching: 0
 exercises: 0
 
 objectives:
-- "learn about the Rstudio panes"
-- "perform basic arithematic functions"
-keypoints:
+ - "perform basic arithematic functions"
+ - "Understand the basic logical operators"
+
 
 ---
 ## R syntax and Logical operators 
