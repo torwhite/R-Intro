@@ -4,7 +4,7 @@ time: 0
 objectives:
 - " learning how to use the sample dataset"
 - "understanding how to import data in R studio"
-- 
+
 keypoints:
 - ""
 ---
