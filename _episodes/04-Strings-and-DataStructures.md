@@ -2,7 +2,7 @@
 title: "Intoduction to strings and data structures "
 
 objectives:
--"understand basics of strings and string manipulation"
+- "understand basics of strings and string manipulation"
 - " understanding different data structure"
 - "learn about functions of each data structure"
 keypoints:
@@ -10,7 +10,7 @@ keypoints:
 
 ---
 
-## Strings 
+## Strings
 
 - Strings are made of a single character or contain a collection of characters.
 - Strings can be created by either single quotes (‘ ‘) or double quotes (“ “)
@@ -20,11 +20,11 @@ keypoints:
 -	String starts and ends with a single quote. Double quotes (“ “), and through the escape sequence (‘/’), single quote can become a part of the string.
 Example- ‘buses’, ‘merry”s’, ‘ merry\’s’
 
--	String start and end with a double quote. Single quote (‘ ‘), and through the escape sequence (‘\’), double quote can become a part of the string 
+-	String start and end with a double quote. Single quote (‘ ‘), and through the escape sequence (‘\’), double quote can become a part of the string
 Example : “buses”, “merry’s”, “ merry\”s”
 
 ~~~
-# input code string concatenation 
+# input code string concatenation
 Count number of characters in string
 x1 <- "Olivia"
 x2 <- "Jhon"
@@ -73,7 +73,7 @@ z
 > x1 <- "Olivia"
 > x2 <- "Jhon"
 > x3 <- "William"
-> 
+>
 > #checking number of characters
 > nchar(x1)
 [1] 6
@@ -114,7 +114,7 @@ z
 > z <- paste(z1, z2, collapse = " and ")
 > z
 [1] "Please bring me some vegetables and a few  fruits"
-> 
+>
 ~~~
 {: .output}
 
@@ -122,16 +122,16 @@ z
 
 ### Vector
 
-Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. The type of data inside a vector can be determined by using the **type of()** function and the length (or) number of elements in a vector can be found with the **length()** function. 
+Vectors are the basic data structure of R. Vectors can hold multiple values together using the concatenate **c()** function. The type of data inside a vector can be determined by using the **type of()** function and the length (or) number of elements in a vector can be found with the **length()** function.
 
 R uses **one indexing** unlike python, hence the position of the first component in a vector can be accessed by vector name [1]
 
 A vector will always **contain** data of the **same data type**. If a vector contains multiple data types the vector will convert all its values to the same data type in the below order of precedence:
-- Character 
+- Character
 
 - Double (Float / Decimals)
 
-- Integers (Round whole numbers) 
+- Integers (Round whole numbers)
 
 ~~~
 # input code
@@ -149,7 +149,7 @@ v3
 is.vector(v3)
 
 v4<- c (TRUE, TRUE, "a", 5)
-v4 
+v4
 typeof(v4)
 
 v1 <- c(1, 2, 3, 4, 5)
@@ -165,7 +165,7 @@ v3
 is.vector(v3)
 
 v4<- c (TRUE, TRUE, "a", 5)
-v4 
+v4
 typeof(v4)
 
 ~~~
@@ -178,25 +178,25 @@ typeof(v4)
 [1] 1 2 3 4 5
 > is.vector(v1)
 [1] TRUE
-> 
+>
 > v2 <- c("a", "b", "c")
 > v2
 [1] "a" "b" "c"
 > is.vector(v2)
 [1] TRUE
-> 
+>
 > v3 <- c (TRUE, TRUE, FALSE, FALSE, TRUE)
 > v3
 [1]  TRUE  TRUE FALSE FALSE  TRUE
 > is.vector(v3)
 [1] TRUE
-> 
+>
 > v4<- c (TRUE, TRUE, "a", 5)
-> v4 
+> v4
 [1] "TRUE" "TRUE" "a"    "5"   
 > typeof(v4)
 [1] "character"
-> 
+>
 
 ~~~
 {: .output}
@@ -204,13 +204,13 @@ typeof(v4)
 
 #### **Analyzing a Vector**
 
-class(vector_name) - Type of data present inside the vector 
+class(vector_name) - Type of data present inside the vector
 
-str(vector_name) - Structure of the vector 
+str(vector_name) - Structure of the vector
 
-is.na(vector_name) - Checks if each element of vector is “NA” 
+is.na(vector_name) - Checks if each element of vector is “NA”
 
-is.null(vector_name) - Checks if the entire vector is empty 
+is.null(vector_name) - Checks if the entire vector is empty
 
 length(vector_name) - Number of elements present inside the vector
 
@@ -222,13 +222,13 @@ length(vector_name) - Number of elements present inside the vector
  num [1:4] 1 2 3 4
 > length(x)
 [1] 4
-> 
+>
 > x<- c(1,2,3,4)
 > is.na(x)
 [1] FALSE FALSE FALSE FALSE
 > is.null(x)
 [1] FALSE
-> 
+>
 > x<- c(TRUE, FALSE, TRUE, TRUE)
 > class(x)
 [1] "logical"
@@ -236,7 +236,7 @@ length(vector_name) - Number of elements present inside the vector
  logi [1:4] TRUE FALSE TRUE TRUE
 > length(x)
 [1] 4
-> 
+>
 > x<- c(1,2,3,4,NA)
 > is.na(x)
 [1] FALSE FALSE FALSE FALSE  TRUE
@@ -284,12 +284,12 @@ vector_name[-c(1,4)] - All elements except those at positions 1 & 4 in the vecto
 
 Sorting of a vector can be performed using two different functions
 
-sort(vector) - Sorts the vector numerically or alphabetically based on vector type 
+sort(vector) - Sorts the vector numerically or alphabetically based on vector type
               (ascending by default)
 
-order(vector) - Returns the indices of the vector in the order they would appear when 
+order(vector) - Returns the indices of the vector in the order they would appear when
                 the vector is sorted (ascending by default)
-                
+
 ~~~
 > x<- c("D","B","A","E","C")
 > sort(x)
@@ -308,7 +308,7 @@ order(vector) - Returns the indices of the vector in the order they would appear
 ~~~
 {: .language-r}
 
-### Vector indexing 
+### Vector indexing
 
 ~~~
 # Vector Indexing Methods in R
@@ -363,43 +363,39 @@ x5 <- vec_named[c("Banana", "Pears")]
 > # -----------------------------------------
 > # 2. Positive-Integral Index Vectors
 > vec2 <- 12:22
-> 
+>
 > # Accessing directly using a single index number
 > x1 <- vec2[2]
 > x1
 [1] 13
-> 
+>
 > # Accessing using the c() function for multiple index values
 > x2 <- vec2[c(2, 5, 7)]
 > x2
 [1] 13 16 18
-> 
+>
 > access_values <- c(2, 5, 7)
 > x3 <- vec2[access_values]
 > x3
 [1] 13 16 18
-> 
+>
 > # ----------------------------------------
 > # 3. Negative Integral Index Values
 > x4 <- vec2[c(-1, -4, -3)]
 > x4
 [1] 13 16 17 18 19 20 21 22
-> 
-> 
+>
+>
 > # ----------------------------------------
 > # 4. Character Indexing
 > vec_named <- c("Apple" = 1, "Banana" = 2, "Orange" = 5, "Pears" = 8)
 > vec_named
- Apple Banana Orange  Pears 
-     1      2      5      8 
+ Apple Banana Orange  Pears
+     1      2      5      8
 > x5 <- vec_named[c("Banana", "Pears")]
 > x5
-Banana  Pears 
-     2      8 
-     
+Banana  Pears
+     2      8
+
 ~~~
 {: .output}
-                
-
-
-
