@@ -54,5 +54,5 @@ Check out these workshops after you've completed this one:
 3. [R Data Pre-Processing]()
 4. [R Advanced Data Visualization]()
 
-you can click on the link[here] (https://researchguides.uic.edu/hub/workshops) to attend other data science workshop hosted by the UIC library 
+you can click on the link [here](https://researchguides.uic.edu/hub/workshops) to attend other data science workshop hosted by the UIC library 
 
