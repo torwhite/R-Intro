@@ -72,7 +72,8 @@ data_frame_name <- read.csv(file. choose(), header = T)
 Here, file. choose() - Allows you to choose a .csv file stored in your local desktop
 
 Here, header = T - Indicates the first column in the file contains column names.
-[importing data](../fig/06-importing data.PNG)
+
+[importing data](../fig/06-importing-data.PNG)
 
 
 Double click (or) click once and select open on your desired file to import 
