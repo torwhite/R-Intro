@@ -46,9 +46,10 @@ Removing a variable, the following command can be used rm ()
 
 ## **Data Types**
 
--	Data type in R specifies the size and type of information the variable will store.
--
--	R language has five main data types
+
+	Data type in R specifies the size and type of information the variable will store.
+  
+  R language has five main data types
 
 ![R Datatype](../fig/03-R-datatype.PNG)
 
