@@ -1,5 +1,5 @@
 ---
-title: "R packages and datatypes"
+title: " Variables and datatypes"
 time: 0
 
 objectives:
