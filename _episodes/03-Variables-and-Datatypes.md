@@ -53,6 +53,32 @@ Removing a variable, the following command can be used rm ()
 
 ![R Datatype](../fig/03-R-datatype.PNG)
 
+#### Checking data type in R 
+
+There are several functions that can show you the data type of an R object, such as **typeof**, **mode**, **storage.mode, class** and **str**.the main use of some of them is not to just check the data type of an R object. For instance, the class of an R object can be different from the data type (which is very useful when creating S3 classes) and the str function is designed to show the full structure of an object. If you want to print the R data type, we recommend using the typeof function.
+To summarize, the following imagwe shows the differences of the possible outputs when applying **typeof, storage.mode** and **mode** functions.
+
+![ datatype table](../fig/03-data-type-table.PNG)
+
+There are other functions that allow you to check if some object belongs to some data type, returning **TRUE or FALSE**. As a rule, these functions start with **is.** followed by the data type.
+
+Example- is.numeric(4) #true
+
+#### Data type coercion 
+You can coerce data types in R with the functions starting with **as.**, summarized
+
+~~~
+as.numeric == numeric
+as.integar == integer 
+as.double == double 
+as.character == Character
+as.logical== Boolean
+as.raw ==	Raw
+
+~~~
+{:.language-r)
+
+
 ### Character data type 
 
 -	Character data type stores value or strings and contains alphabets, numbers, and symbols
