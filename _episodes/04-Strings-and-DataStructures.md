@@ -162,7 +162,61 @@ y y
 ~~~
 {: .output}
 
+### Split a Dataframe in R
 
+
+You can split a data set in subsets based on one or more variables that represents groups of the data. 
+Consider the following data frame
+
+~~~
+set.seed(3)
+
+df <- CO2[sample(1:nrow(CO2), 10), ]
+head(df)
+
+~~~
+{: .language-r}
+
+~~~
+#output
+
+   Plant        Type  Treatment conc uptake
+15   Qn3      Quebec nonchilled   95   16.2
+68   Mc1 Mississippi    chilled  500   19.5
+32   Qc2      Quebec    chilled  350   38.8
+27   Qc1      Quebec    chilled  675   35.4
+49   Mn1 Mississippi nonchilled 1000   35.5
+48   Mn1 Mississippi nonchilled  675   32.4
+
+~~~
+{: .output}
+
+You can use the split function to **split** the data frame **in groups** based for example in the Treatment variable.
+
+~~~
+split(df, f = df$Treatment)
+~~~
+{: .language-r}
+
+~~~
+$`nonchilled`
+   Plant        Type  Treatment conc uptake
+15   Qn3      Quebec nonchilled   95   16.2
+49   Mn1 Mississippi nonchilled 1000   35.5
+48   Mn1 Mississippi nonchilled  675   32.4
+10   Qn2      Quebec nonchilled  250   37.1
+44   Mn1 Mississippi nonchilled  175   19.2
+
+$chilled
+   Plant        Type Treatment conc uptake
+68   Mc1 Mississippi   chilled  500   19.5
+32   Qc2      Quebec   chilled  350   38.8
+27   Qc1      Quebec   chilled  675   35.4
+23   Qc1      Quebec   chilled  175   24.1
+79   Mc3 Mississippi   chilled  175   18.0
+
+~~~
+{: .output}
 
 
 
