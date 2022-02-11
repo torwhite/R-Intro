@@ -30,7 +30,6 @@ operation directly in the console.
 
 Implementing the same code in the script area. If you do not see a file open in the script 
 area select **File → New File → R Script** from the menu and then type the code in the new file that appears.
-
 Now the code in the script area (or R File) does not execute automatically, instead place 
 the cursor on the line which needs to be executed and select **RUN** option or press **Ctrl + Enter**(for windows). 
 To run multiple lines of code, select all the lines first and then select **RUN** option or press **Ctrl + Enter**.
@@ -81,6 +80,18 @@ Provides a list of Boolean results based on operation performed
 - !x  NOT operation
 
 Please note that in R the Boolean values “TRUE” & “FALSE” can also be written as “T” &” F”.
+
+#### Function in R
+A key feature of R is functions. Functions are “self contained” modules of code that accomplish a specific task. Functions usually take in some sort of data structure (value, vector, dataframe etc.), process it, and return a result.
+The general usage for a function is the name of the function followed by parentheses:**function_name(input)**
+
+#### Comments in R 
+Comments can be used to explain R code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
+Comments starts with a **#** When executing the R-code, **R will ignore anything that starts with #**.
+
+Example:- **# This is a comment**
+"Hello World!"
+
 
 
 
