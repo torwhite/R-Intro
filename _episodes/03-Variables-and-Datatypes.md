@@ -65,6 +65,7 @@ There are other functions that allow you to check if some object belongs to some
 Example- is.numeric(4) #true
 
 #### Data type coercion 
+
 You can coerce data types in R with the functions starting with **as.**, summarized
 
 ~~~
@@ -84,6 +85,7 @@ as.raw ==	 Raw
 -	Character data type stores value or strings and contains alphabets, numbers, and symbols
 
 -	Character data type value is written withing single (‘ ‘)or double inverted quotes (“ “) 
+
 Example- “A”, “2.21”, “skill@”.
 
 ~~~
