@@ -66,8 +66,7 @@ as.logical== Boolean
 as.raw ==	 Raw
 
 ~~~
-{:.language-r)
-
+{:.language-r}
 
 ### Character data type 
 
