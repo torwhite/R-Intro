@@ -33,21 +33,10 @@ As we Know R is a case-sensitive language hence a variable ABC = 15 and Abc= 32 
 
 -	Special characters such as “#”, “&’, etc., along with white spaces (tabs, space) are not allowed in a variable name
 
-#### Variable Type in R 
-To know the type of the variable in R, we can use the following two functions
-
--**mode ()** – is a mutually exclusive classification of objects according to their basic structure and is the basic building block for data objects in R. There are 6 basic atomic codes in R – logical, integer, real, complex, string (or character) and raw
-
--**Type ()**- This returns the low-level value which matches the internal type of object in R. 
-
-Removing a variable, the following command can be used rm ()
-
-
 
 ## **Data Types**
 
-
-	Data type in R specifies the size and type of information the variable will store.
+Data type in R specifies the size and type of information the variable will store.
   
   R language has five main data types
 
@@ -84,6 +73,39 @@ as.raw ==	 Raw
 -	Character data type stores value or strings and contains alphabets, numbers, and symbols
 -	Character data type value is written withing single (‘ ‘)or double inverted quotes (“ “) 
 Example- “A”, “2.21”, “skill@”.
+
+~~~
+#input 
+# Declaring character value with double quotes ""
+charac <- "Abcd"
+charac
+class(charac)
+
+# Declaring character value with single quotes ''
+charac_1 <- 'b'
+charac_1
+class(charac_1)
+
+#Convert values to character data type.
+pi_value <- 3.14
+x <- as. character(pi_value)
+x
+class(x)
+
+# Concatenation of Character
+first name <- "Kasturi "
+last name <- "Acharya"
+
+
+# Character Value Concatenation
+# Paste function is used to concatenate characters
+full_name <- paste (first_name, last_name)
+full_name
+
+~~~
+{:.language-r}
+
+
 
 
 ~~~
