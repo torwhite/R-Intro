@@ -73,7 +73,7 @@ as.integar == integer
 as.double == double 
 as.character == Character
 as.logical== Boolean
-as.raw ==	Raw
+as.raw ==	 Raw
 
 ~~~
 {:.language-r)
