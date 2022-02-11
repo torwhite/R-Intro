@@ -68,11 +68,14 @@ as.raw ==	 Raw
 ~~~
 {:.language-r)
 
+
 ### Character data type 
 
--	Character data type stores value or strings and contains alphabets, numbers, and symbols
--	Character data type value is written withing single (‘ ‘)or double inverted quotes (“ “) 
+Character data type stores value or strings and contains alphabets, numbers, and symbols
+Character data type value is written withing single (‘ ‘)or double inverted quotes (“ “) 
 Example- “A”, “2.21”, “skill@”.
+
+
 
 ~~~
 #input 
