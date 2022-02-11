@@ -118,6 +118,57 @@ z
 ~~~
 {: .output}
 
+
+## Split 
+The split function divides the input data (x) in different groups (f). 
+
+The following block summarizes the function arguments and its description.
+
+~~~
+
+split(x,                 # Vector or data frame
+      f,                 # Groups of class factor, vector or list
+      drop = FALSE,      # Whether to drop unused levels or not
+      sep = ".",         # Character string to separate groups when f is a list
+      lex.order = FALSE, # Whether the factor concatenation should be lexically ordered or not
+      ...)               # Additional arguments
+    
+~~~
+{: .language-r}
+
+**Example**- Suppose you have a named vector, where the name of each element corresponds to the group the element belongs. Hence, you can split the vector in two vectors where the elements are of the same group, passing the names of the vector with the names function to the argument **f**.
+
+~~~
+a <- c(x = 3, y = 5, x = 1, x = 4, y = 3)
+a
+split(a,f = names(a))
+
+~~~
+{: .language-r}
+
+~~~
+#output 
+> a
+x y x x y 
+3 5 1 4 3 
+> split(a,f = names(a))
+$x
+x x x 
+3 1 4 
+
+$y
+y y 
+5 3 
+~~~
+{: .output}
+
+
+
+
+
+
+
+
 ## Data Structure
 
 ### Vector
