@@ -27,7 +27,7 @@ folder \_includes/install_instructions by using code seen below. Add or remove i
 ## Setup files:
 
 Please download the following files to particpate in the workshop:  
-[script](../files/introduction-to-R-script.R)
+[script](../files/introduction-to-R-script.R)  
 [data files](../files/data.zip)
 
 ## About the Data Used in this Workshop:
