@@ -26,25 +26,32 @@ library(help = "datasets")
 
 # SOME SAMPLE DATASETS #####################################
 
-# iris data
-?iris
+~~~
 iris
+?iris
 
-# UCBAdmissions
-?UCBAdmissions
-UCBAdmissions
+cars <-cars
 
-# Titanic
-? Titanic
-Titanic
+head(cars)
 
-# state.x77
-?state.x77
-state.x77
+iris <- iris
+head(iris)
 
-#swiss
-?swiss
-swiss
+tail(iris,20)
+
+iris[,c(1,2)]
+
+iris[,c('Sepal.Length')]
+
+
+str(iris)
+
+rm(list = ls())
+
+iris
+~~~
+{: .language-r}
+
 
 # CLEAN UP #################################################
 
@@ -95,49 +102,19 @@ library("package_name") – Load the package in current R session.
 this will then load or put into active memory a few essential packages
 
 ~~~
-Install pacman ("package manager") if needed
-if (!require("pacman")) install.packages("pacman")
+# first step of using a package
+install.packages("tidyverse")
 
-# Load contributed packages with pacman
-pacman::p_load(pacman, party, psych, rio, tidyverse)
-# pacman: for loading/unloading packages
-# party: for decision trees
-# psych: for many statistical procedures
-# rio: for importing data
-# tidyverse: for so many reasons
+# second step - needs happen each session
+# load library
+library(tidyverse)
+
+## load data from elsewhere
+
+df <- read_csv("data/StateData.csv")
 
 ~~~
 {: .language-r}
-
-~~~
-library(datasets)  # For example datasets
-
-# LOAD AND PREPARE DATA ####################################
-
-# Save data to "df" (for "data frame")
-# Rename outcome as "y" (if it helps)
-# Specify outcome with df$y
-
-# Import CSV files with readr::read_csv() from tidyverse
-(df <- read_csv("data/StateData.csv"))
-
-# Import other formats with rio::import() from rio
-(df <- import("data/StateData.xlsx") %>% as_tibble())
-
-# or...
-
-df <- import("data/StateData.xlsx") %>%
-  as_tibble() %>%
-  select(state_code, 
-    psychRegions,
-    instagram:modernDance) %>% 
-  mutate(psychRegions = as.factor(psychRegions)) %>%
-  rename(y = psychRegions) %>%
-  print()
-  
-  ~~~
-{: .language-r}
-
 
 
 
