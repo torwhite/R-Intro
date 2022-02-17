@@ -25,7 +25,7 @@ Example : “buses”, “merry’s”, “ merry\”s”
 
 ~~~
 # input code string concatenation
-Count number of characters in string
+Count number of characters 
 x1 <- "Olivia"
 x2 <- "Jhon"
 x3 <- "William"
@@ -43,37 +43,39 @@ letters[1:5]
 
 # String Concatenation
 # Paste function is used with syntax below:
-# paste(..., sep = " ", collapse = NULL)
 
-x <- paste("Hello","World", "!", sep = " ", collapse = "--")
+x <- paste("Hello","World","!",sep = " ")
 x
 
-y <- paste(x1, x2, x3, "is happy.")
+y <- paste(x1,x2,x3,"is happy.")
 y
 
 z<- paste("Hello","everyone","!", sep =" ")
 z
+# Vectors
 
-x4 <- c("Olivia", "Jhoin", "William")
-y1 <- paste(x4, "is happy.")
+c() # concatenate function
+
+x4 <- c("Olivia","Jhon","William")
+y1 <- paste(x4,"is happy.")
 y1
 
-y2 <- paste(x4, "is happy.", collapse = " -- ")
-y2
-
-z1 <- c("Please bring me", "a few ")
-z2 <- c("some vegetables", "fruits")
-z <- paste(z1, z2, collapse = " and ")
+z1 <- c("Please bring me","a few ")
+z2 <- c("some vegetables","fruits")
+z <- paste(z1,z2,collapse = " and ")
 z
 ~~~
 {: .language-r}
 
 ~~~
 # output
+ # input code string concatenation
+> Count number of characters 
+Error: unexpected symbol in "Count number"
 > x1 <- "Olivia"
 > x2 <- "Jhon"
 > x3 <- "William"
->
+> 
 > #checking number of characters
 > nchar(x1)
 [1] 6
@@ -81,6 +83,7 @@ z
 [1] 4
 > nchar(x3)
 [1] 7
+> 
 > # Letters using vector function in R
 > # Check the sequence of letters
 > letters
@@ -90,130 +93,132 @@ z
 [1] "d"
 > letters[1:5]
 [1] "a" "b" "c" "d" "e"
+> 
 > # String Concatenation
 > # Paste function is used with syntax below:
-> # paste(..., sep = " ", collapse = NULL)
-> x <- paste("Hello","World", "!", sep = " ", collapse = "--")
+> 
+> x <- paste("Hello","World","!",sep = " ")
 > x
 [1] "Hello World !"
+> 
+> y <- paste(x1,x2,x3,"is happy.")
+> y
+[1] "Olivia Jhon William is happy."
+> 
 > z<- paste("Hello","everyone","!", sep =" ")
 > z
 [1] "Hello everyone !"
-> y <- paste(x1, x2, x3, "is happy.")
-> y
-[1] "Olivia Jhon William is happy."
-> x4 <- c("Olivia", "Jhoin", "William")
-> y1 <- paste(x4, "is happy.")
+> 
+> x4 <- c("Olivia","Jhon","William")
+> y1 <- paste(x4,"is happy.")
 > y1
-[1] "Olivia is happy."  "Jhoin is happy."   "William is happy."
-> y2 <- paste(x4, "is happy.", collapse = " -- ")
-> y2
-[1] "Olivia is happy. -- Jhoin is happy. -- William is happy."
-> z1 <- c("Please bring me", "a few ")
-> z2 <- c("some vegetables", "fruits")
-> z <- paste(z1, z2, collapse = " and ")
+[1] "Olivia is happy."  "Jhon is happy."    "William is happy."
+> 
+> z1 <- c("Please bring me","a few ")
+> z2 <- c("some vegetables","fruits")
+> z <- paste(z1,z2,collapse = " and ")
 > z
 [1] "Please bring me some vegetables and a few  fruits"
->
+
 ~~~
 {: .output}
 
+### String Manipulation 
 
-## Split 
-The split function divides the input data (x) in different groups (f). 
-
-The following block summarizes the function arguments and its description.
+-it’s the process of corecing, slicing, pasting, or analyzing strings
 
 ~~~
+x <- "William is happy today"
+x
 
-split(x,                 # Vector or data frame
-      f,                 # Groups of class factor, vector or list
-      drop = FALSE,      # Whether to drop unused levels or not
-      sep = ".",         # Character string to separate groups when f is a list
-      lex.order = FALSE, # Whether the factor concatenation should be lexically ordered or not
-      ...)               # Additional arguments
-    
-~~~
-{: .language-r}
+# Converting all words to upper case using toupper() function
+toupper(x)
 
-**Example**- Suppose you have a named vector, where the name of each element corresponds to the group the element belongs. Hence, you can split the vector in two vectors where the elements are of the same group, passing the names of the vector with the names function to the argument **f**.
+# Converting all words to lower case using tolower() function
+tolower(x)
 
-~~~
-a <- c(x = 3, y = 5, x = 1, x = 4, y = 3)
-a
-split(a,f = names(a))
+x1 <- "Henry is A hardworker. He owns A house and A car."
+x1
+chartr("A", "a", x1)
+
+z <- "I widd gq tq market tqmqrrqw."
+chartr("dq","lo", z)
+
+x2 <- "Henry puts in all his good efforts"
+x2
+substr(x2, start = 22, stop = 27)
+
+#split function
+
+x4 <- "Henry puts in all his good efforts"
+class(x4)
+y1 <- strsplit(x4, split = " ")
+y1
+class(y1)
+#either create a variable like y1 or direct use the function in case of Mason 
+strsplit("Mason", split ="") 
+x4
+y2 <- unlist(strsplit(x4, split = " "))
+y2
+class(y2)
 
 ~~~
 {: .language-r}
 
 ~~~
 #output 
-> a
-x y x x y 
-3 5 1 4 3 
-> split(a,f = names(a))
-$x
-x x x 
-3 1 4 
+> x <- "William is happy today"
+> x
+[1] "William is happy today"
+> 
+> # Converting all words to upper case using toupper() function
+> toupper(x)
+[1] "WILLIAM IS HAPPY TODAY"
+> 
+> # Converting all words to lower case using tolower() function
+> tolower(x)
+[1] "william is happy today"
+> 
+> x1 <- "Henry is A hardworker. He owns A house and A car."
+> x1
+[1] "Henry is A hardworker. He owns A house and A car."
+> chartr("A", "a", x1)
+[1] "Henry is a hardworker. He owns a house and a car."
+> 
+> z <- "I widd gq tq market tqmqrrqw."
+> chartr("dq","lo", z)
+[1] "I will go to market tomorrow."
+> 
+> x2 <- "Henry puts in all his good efforts"
+> x2
+[1] "Henry puts in all his good efforts"
+> substr(x2, start = 22, stop = 27)
+[1] " good "
+> 
+> #split function
+> 
+> x4 <- "Henry puts in all his good efforts"
+> class(x4)
+[1] "character"
+> y1 <- strsplit(x4, split = " ")
+> y1
+[[1]]
+[1] "Henry"   "puts"    "in"      "all"     "his"     "good"    "efforts"
 
-$y
-y y 
-5 3 
-~~~
-{: .output}
+> class(y1)
+[1] "list"
+> #either create a variable like y1 or direct use the function in case of Mason 
+> strsplit("Mason", split ="") 
+[[1]]
+[1] "M" "a" "s" "o" "n"
 
-### Split a Dataframe in R
-
-
-You can split a data set in subsets based on one or more variables that represents groups of the data. 
-Consider the following data frame
-
-~~~
-set.seed(3)
-
-df <- CO2[sample(1:nrow(CO2), 10), ]
-head(df)
-
-~~~
-{: .language-r}
-
-~~~
-#output
-
-   Plant        Type  Treatment conc uptake
-15   Qn3      Quebec nonchilled   95   16.2
-68   Mc1 Mississippi    chilled  500   19.5
-32   Qc2      Quebec    chilled  350   38.8
-27   Qc1      Quebec    chilled  675   35.4
-49   Mn1 Mississippi nonchilled 1000   35.5
-48   Mn1 Mississippi nonchilled  675   32.4
-
-~~~
-{: .output}
-
-You can use the split function to **split** the data frame **in groups** based for example in the Treatment variable.
-
-~~~
-split(df, f = df$Treatment)
-~~~
-{: .language-r}
-
-~~~
-$`nonchilled`
-   Plant        Type  Treatment conc uptake
-15   Qn3      Quebec nonchilled   95   16.2
-49   Mn1 Mississippi nonchilled 1000   35.5
-48   Mn1 Mississippi nonchilled  675   32.4
-10   Qn2      Quebec nonchilled  250   37.1
-44   Mn1 Mississippi nonchilled  175   19.2
-
-$chilled
-   Plant        Type Treatment conc uptake
-68   Mc1 Mississippi   chilled  500   19.5
-32   Qc2      Quebec   chilled  350   38.8
-27   Qc1      Quebec   chilled  675   35.4
-23   Qc1      Quebec   chilled  175   24.1
-79   Mc3 Mississippi   chilled  175   18.0
+> x4
+[1] "Henry puts in all his good efforts"
+> y2 <- unlist(strsplit(x4, split = " "))
+> y2
+[1] "Henry"   "puts"    "in"      "all"     "his"     "good"    "efforts"
+> class(y2)
+[1] "character"
 
 ~~~
 {: .output}
@@ -257,21 +262,9 @@ v4<- c (TRUE, TRUE, "a", 5)
 v4
 typeof(v4)
 
-v1 <- c(1, 2, 3, 4, 5)
-v1
-is.vector(v1)
-
-v2 <- c("a", "b", "c")
-v2
-is.vector(v2)
-
-v3 <- c (TRUE, TRUE, FALSE, FALSE, TRUE)
-v3
-is.vector(v3)
-
-v4<- c (TRUE, TRUE, "a", 5)
-v4
-typeof(v4)
+v5<- c(6,7 ,8.8,23L)
+v5
+typeof(v5)
 
 ~~~
 {: .language-r}
@@ -301,7 +294,13 @@ typeof(v4)
 [1] "TRUE" "TRUE" "a"    "5"   
 > typeof(v4)
 [1] "character"
->
+
+> v5<- c(6,7 ,8.8,23L)
+> v5
+[1]  6.0  7.0  8.8 23.0
+> typeof(v5)
+[1] "double"
+
 
 ~~~
 {: .output}
@@ -415,92 +414,50 @@ order(vector) - Returns the indices of the vector in the order they would appear
 
 ### Vector indexing
 
+# Indexing 
+# R uses 1 indexing 
+
 ~~~
-# Vector Indexing Methods in R
-#   1. Logical Index Vector
-#   2. Positive-Integral Index Vector
-#   3. Negative-Integral Index Vector
-#   4. Character Index Vector
+x <- c("A", "B", "C", "D", "E")
+x
 
-# -----------------------------------------
-# 1. Logical Index Vector
-vec1 <- 12:17
-v_logindx <- vec1[c(F, F, T, F, T)]
-v_logindx
+x[1]
 
-# -----------------------------------------
-# 2. Positive-Integral Index Vectors
-vec2 <- 12:22
+x[4]
 
-# Accessing directly using a single index number
-x1 <- vec2[2]
-x1
+#range
 
-# Accessing using the c() function for multiple index values
-x2 <- vec2[c(2, 5, 7)]
-x2
+x[1:4]
 
-access_values <- c(2, 5, 7)
-x3 <- vec2[access_values]
-x3
+# index a vector with a vector
 
-# ----------------------------------------
-# 3. Negative Integral Index Values
-x4 <- vec2[c(-1, -4, -3)]
-x4
-
-
-# ----------------------------------------
-# 4. Character Indexing
-vec_named <- c("Apple" = 1, "Banana" = 2, "Orange" = 5, "Pears" = 8)
-vec_named
-x5 <- vec_named[c("Banana", "Pears")]
-
+x[c(1,4)]
 ~~~
 {: .language-r}
 
 ~~~
-> # 1. Logical Index Vector
-> vec1 <- 12:17
-> v_logindx <- vec1[c(F, F, T, F, T)]
-> v_logindx
-[1] 14 16
-> # -----------------------------------------
-> # 2. Positive-Integral Index Vectors
-> vec2 <- 12:22
->
-> # Accessing directly using a single index number
-> x1 <- vec2[2]
-> x1
-[1] 13
->
-> # Accessing using the c() function for multiple index values
-> x2 <- vec2[c(2, 5, 7)]
-> x2
-[1] 13 16 18
->
-> access_values <- c(2, 5, 7)
-> x3 <- vec2[access_values]
-> x3
-[1] 13 16 18
->
-> # ----------------------------------------
-> # 3. Negative Integral Index Values
-> x4 <- vec2[c(-1, -4, -3)]
-> x4
-[1] 13 16 17 18 19 20 21 22
->
->
-> # ----------------------------------------
-> # 4. Character Indexing
-> vec_named <- c("Apple" = 1, "Banana" = 2, "Orange" = 5, "Pears" = 8)
-> vec_named
- Apple Banana Orange  Pears
-     1      2      5      8
-> x5 <- vec_named[c("Banana", "Pears")]
-> x5
-Banana  Pears
-     2      8
-
+> x <- c("A", "B", "C", "D", "E")
+> x
+[1] "A" "B" "C" "D" "E"
+> 
+> x[1]
+[1] "A"
+> 
+> x[4]
+[1] "D"
+> 
+> #range
+> 
+> x[1:4]
+[1] "A" "B" "C" "D"
+> 
+> # index a vector with a vector
+> 
+> x[c(1,4)]
+[1] "A" "D"
 ~~~
 {: .output}
+
+
+
+
