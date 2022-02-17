@@ -33,6 +33,8 @@ data. Frame (column_1, column_2, column_3, …………………….)
 
 Make sure that the names of the columns are unique and are of the same length.
 
+[dataframe example](.../fig/05-dataframe-example.png)
+
 ### Creating a data frame
 ~~~
 # input code
