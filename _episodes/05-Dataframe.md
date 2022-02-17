@@ -52,46 +52,28 @@ student.data
 # Check the structure of the dataframe student.data
 str(student.data)
 
-# Check the summary of the dataframe student.data
+#check the head and tail of the dataframe student.data
+head(student.data, 3)
+
+tail(student.data, 3)
+
+
+# Check the summary, lenth and dimension of the dataframe student.data
 summary(student.data)
 
-# Check the length of the dataframe student.data
 length(student.data)
 
-# Check dimension of the dataframe (Row/Column)
 dim(student.data)
 
 # Check number of row/columns individually.
 ncol(student.data)
 nrow(student.data)
 
-# Checking attributes of the dataframe
-attributes(student.data)
-
-
-# Create a dataframe for user data containing their
-# IDs, Names, Age and heights in cm.
-user.data <- data.frame(
-   user.sn = c(1:5),
-   user.name = c("Mr. A", "Mrs B", "Mrs. C", "Mr. D", "Mr. D"),
-   user.age = c(25, 50, 41, 29, 58),
-   user.height = c(180, 165, 155, 162, 142)
-)
-
-# Display the dataframe user.data
-user.data 
-
-# Export/Write dataframe to a .csv file >> user.csv
-write.csv(user.data,"user.csv", row.names = FALSE)
-
-
-
 ~~~
 {: .language-r}
 
 ~~~
-# output
-> # Creating a Data Frame for Students data where we have the 
+#output 
 > # Student ID, names and their marks.
 > student.data <- data.frame(
 +    std_id = c(001:005),
@@ -107,14 +89,29 @@ write.csv(user.data,"user.csv", row.names = FALSE)
 3      3   Olivia      74.6
 4      4    Steve      80.0
 5      5    David      95.0
-
+> 
 > # Check the structure of the dataframe student.data
 > str(student.data)
 'data.frame':	5 obs. of  3 variables:
  $ std_id   : int  1 2 3 4 5
  $ std_name : chr  "William" "James" "Olivia" "Steve" ...
  $ std_marks: num  84.8 98.4 74.6 80 95
-> # Check the summary of the dataframe student.data
+> 
+> #check the head and tail of the dataframe student.data
+> head(student.data, 3)
+  std_id std_name std_marks
+1      1  William      84.8
+2      2    James      98.4
+3      3   Olivia      74.6
+> 
+> tail(student.data, 3)
+  std_id std_name std_marks
+3      3   Olivia      74.6
+4      4    Steve      80.0
+5      5    David      95.0
+> 
+> 
+> # Check the summary, lenth and dimension of the dataframe student.data
 > summary(student.data)
      std_id    std_name           std_marks    
  Min.   :1   Length:5           Min.   :74.60  
@@ -123,55 +120,18 @@ write.csv(user.data,"user.csv", row.names = FALSE)
  Mean   :3                      Mean   :86.56  
  3rd Qu.:4                      3rd Qu.:95.00  
  Max.   :5                      Max.   :98.40  
- 
-> # Check the length of the dataframe student.data
+> 
 > length(student.data)
 [1] 3
-
-> # Check dimension of the dataframe (Row/Column)
+> 
 > dim(student.data)
 [1] 5 3
-
+> 
 > # Check number of row/columns individually.
 > ncol(student.data)
 [1] 3
 > nrow(student.data)
 [1] 5
-> 
-> # Checking attributes of the dataframe
-> attributes(student.data)
-$names
-[1] "std_id"    "std_name"  "std_marks"
-
-$class
-[1] "data.frame"
-
-$row.names
-[1] 1 2 3 4 5
-
-> 
-> 
-> # Create a dataframe for user data containing their
-
-> # IDs, Names, Age and heights in cm.
-> user.data <- data.frame(
-+    user.sn = c(1:5),
-+    user.name = c("Mr. A", "Mrs B", "Mrs. C", "Mr. D", "Mr. D"),
-+    user.age = c(25, 50, 41, 29, 58),
-+    user.height = c(180, 165, 155, 162, 142)
-+ )
-> 
-> # Display the dataframe user.data
-> user.data 
-  user.sn user.name user.age user.height
-1       1     Mr. A       25         180
-2       2     Mrs B       50         165
-3       3    Mrs. C       41         155
-4       4     Mr. D       29         162
-5       5     Mr. D       58         142
-> 
-> # Export/Write dataframe to a .csv file >> user.csv
-> write.csv(user.data,"user.csv", row.names = FALSE)
 ~~~
 {: .output}
 
@@ -179,59 +139,40 @@ $row.names
 
 ~~~
 # input code
-student.dataEnglish <- data.frame(
-   std_id = c(001:005),
-   std_name = c("William", "James", "Olivia", "Steve", "David"),
-   std_marks_eng = c(84.8, 98.4, 74.6, 80, 95)
-)
 
 student.dataMaths <- data.frame(
-   std_id = c(001:005),
-   std_name = c("William", "James", "Olivia", "Steve", "David"),
-   std_marks_maths = c(56.7, 60.8, 87.1, 55, 62.7)
+  std_id = c(001:005),
+  std_name = c("William", "James", "Olivia", "Steve", "David"),
+  std_marks_maths = c(56.7, 60.8, 87.1, 55, 62.7)
 )
 
-# Using the positive integer indexing to access dataframe
+# select columns
 student.dataMaths[1]
-
-# Using the negative integer indexing to access dataframe
 student.dataMaths[-2]
 
-# Using the $ sign to access the column of data frame
+#selecting columns ONLY data frames
+# give the values as vector
 student.dataMaths$std_marks_maths
 
+#dataframe[Rows, Cols]
 
-marks_eng <- data.frame(student.dataEnglish$std_name, 
-                        student.dataEnglish$std_marks)
-marks_eng
+student.dataMaths[2]
+student.dataMaths[2,]
 
-result1 <- data.frame(student.dataEnglish, student.dataMaths[3])
-result1
-
-result <- data.frame(student.dataEnglish, student.dataMaths$std_marks_maths)
-result
-
-# Export/Write dataframe to a .csv file >> marks.csv
-write.csv (result,"marks.csv", row.names = FALSE)
+student.dataMaths[c(1:3),]
 
 ~~~
 {: .language-r}
 
 ~~~
 # output
-> student.dataEnglish <- data.frame(
-+    std_id = c(001:005),
-+    std_name = c("William", "James", "Olivia", "Steve", "David"),
-+    std_marks_eng = c(84.8, 98.4, 74.6, 80, 95)
-+ )
-> 
 > student.dataMaths <- data.frame(
 +    std_id = c(001:005),
 +    std_name = c("William", "James", "Olivia", "Steve", "David"),
 +    std_marks_maths = c(56.7, 60.8, 87.1, 55, 62.7)
 + )
 > 
-> # Using the positive integer indexing to access dataframe
+> # select columns
 > student.dataMaths[1]
   std_id
 1      1
@@ -239,8 +180,6 @@ write.csv (result,"marks.csv", row.names = FALSE)
 3      3
 4      4
 5      5
-> 
-> # Using the negative integer indexing to access dataframe
 > student.dataMaths[-2]
   std_id std_marks_maths
 1      1            56.7
@@ -249,41 +188,29 @@ write.csv (result,"marks.csv", row.names = FALSE)
 4      4            55.0
 5      5            62.7
 > 
-> # Using the $ sign to access the column of data frame
+> #selecting columns ONLY data frames
+> # give the values as vector
 > student.dataMaths$std_marks_maths
 [1] 56.7 60.8 87.1 55.0 62.7
 > 
+> #dataframe[Rows, Cols]
 > 
-> marks_eng <- data.frame(student.dataEnglish$std_name, 
-+                         student.dataEnglish$std_marks)
-> marks_eng
-  student.dataEnglish.std_name student.dataEnglish.std_marks
-1                      William                          84.8
-2                        James                          98.4
-3                       Olivia                          74.6
-4                        Steve                          80.0
-5                        David                          95.0
+> student.dataMaths[2]
+  std_name
+1  William
+2    James
+3   Olivia
+4    Steve
+5    David
+> student.dataMaths[2,]
+  std_id std_name std_marks_maths
+2      2    James            60.8
 > 
-> result1 <- data.frame(student.dataEnglish, student.dataMaths[3])
-> result1
-  std_id std_name std_marks_eng std_marks_maths
-1      1  William          84.8            56.7
-2      2    James          98.4            60.8
-3      3   Olivia          74.6            87.1
-4      4    Steve          80.0            55.0
-5      5    David          95.0            62.7
-> 
-> result <- data.frame(student.dataEnglish, student.dataMaths$std_marks_maths)
-> result
-  std_id std_name std_marks_eng student.dataMaths.std_marks_maths
-1      1  William          84.8                              56.7
-2      2    James          98.4                              60.8
-3      3   Olivia          74.6                              87.1
-4      4    Steve          80.0                              55.0
-5      5    David          95.0                              62.7
-> 
-> # Export/Write dataframe to a .csv file >> marks.csv
-> write.csv (result,"marks.csv", row.names = FALSE)
+> student.dataMaths[c(1:3),]
+  std_id std_name std_marks_maths
+1      1  William            56.7
+2      2    James            60.8
+3      3   Olivia            87.1
 
 ~~~
 {: .output}
@@ -291,64 +218,78 @@ write.csv (result,"marks.csv", row.names = FALSE)
 ### Data Transformation 
 
 ~~~
-# input code
-# Student Dataframe for English course marks
+#Input code 
 student.dataEnglish <- data.frame(
    std_id = c(001:005),
    std_name = c("William", "James", "Olivia", "Steve", "David"),
    std_marks_eng = c(84.8, 98.4, 74.6, 80, 95)
 )
 
-# Display the created dataframe
+student.marks <- data.frame(
+   student.dataEnglish, 
+   student.dataMaths[3])
+
+student.marks
+
+stud_6 <- data.frame(std_id = c(1:6))
+stud_6
+
+stud6_marks <- data.frame(
+   student.dataEnglish, 
+   stud_6)
+
 student.dataEnglish
 
-# Add column to the dataframe and save as update1.stdDataEng
-# USe case: Adding the grades column to the marksheet
-update1.stdDataEng <- cbind(student.dataEnglish, 
-                            Grades = c("B", "A", "C", "B+", "A+") )
-#Display the updated dataframe after adding the grades
-update1.stdDataEng
-
-# Creating a new dataframe
-# Use case: Addition of new student data 
 new_stdData <- data.frame(
    std_id = 006,
    std_name = "George",
-   std_marks_eng = 75.6, 
-   Grades = "C")
-# Display the new dataframe
+   std_marks_eng = 75.6)
+
 new_stdData
 
-# Adding a new row to the dataframe
-# Use-case New student data entry
-update2.stdDataEng <- rbind(update1.stdDataEng, new_stdData )
-update2.stdDataEng
+update.stdDataEng <- rbind(student.dataEnglish, new_stdData)
 
-# Dropping a row in the data frame update3.stdDataEng
-update3.stdDataEng <- update2.stdDataEng[-2, ]
-update3.stdDataEng
-
-# Dropping a column in the dataframe update3.stdDataEng
-update4.stdDataEng <- update3.stdDataEng[ , -4]
-update4.stdDataEng
-
-# Returning column as a vector
-update4.stdDataEng[1]
-update4.stdDataEng[[1]]
+update.stdDataEng
 
 ~~~
 {: .language-r}
 
 ~~~
 # output
-> # Student Dataframe for English course marks
 > student.dataEnglish <- data.frame(
 +    std_id = c(001:005),
 +    std_name = c("William", "James", "Olivia", "Steve", "David"),
 +    std_marks_eng = c(84.8, 98.4, 74.6, 80, 95)
 + )
 > 
-> # Display the created dataframe
+> student.marks <- data.frame(
++    student.dataEnglish, 
++    student.dataMaths[3])
+> 
+> student.marks
+  std_id std_name std_marks_eng std_marks_maths
+1      1  William          84.8            56.7
+2      2    James          98.4            60.8
+3      3   Olivia          74.6            87.1
+4      4    Steve          80.0            55.0
+5      5    David          95.0            62.7
+> 
+> stud_6 <- data.frame(std_id = c(1:6))
+> stud_6
+  std_id
+1      1
+2      2
+3      3
+4      4
+5      5
+6      6
+> 
+> stud6_marks <- data.frame(
++    student.dataEnglish, 
++    stud_6)
+Error in data.frame(student.dataEnglish, stud_6) : 
+  arguments imply differing number of rows: 5, 6
+> 
 > student.dataEnglish
   std_id std_name std_marks_eng
 1      1  William          84.8
@@ -357,73 +298,25 @@ update4.stdDataEng[[1]]
 4      4    Steve          80.0
 5      5    David          95.0
 > 
-> # Add column to the dataframe and save as update1.stdDataEng
-> # USe case: Adding the grades column to the marksheet
-> update1.stdDataEng <- cbind(student.dataEnglish, 
-+                             Grades = c("B", "A", "C", "B+", "A+") )
-> #Display the updated dataframe after adding the grades
-> update1.stdDataEng
-  std_id std_name std_marks_eng Grades
-1      1  William          84.8      B
-2      2    James          98.4      A
-3      3   Olivia          74.6      C
-4      4    Steve          80.0     B+
-5      5    David          95.0     A+
-> 
-> # Creating a new dataframe
-> # Use case: Addition of new student data 
 > new_stdData <- data.frame(
 +    std_id = 006,
 +    std_name = "George",
-+    std_marks_eng = 75.6, 
-+    Grades = "C")
-> # Display the new dataframe
++    std_marks_eng = 75.6)
+> 
 > new_stdData
-  std_id std_name std_marks_eng Grades
-1      6   George          75.6      C
+  std_id std_name std_marks_eng
+1      6   George          75.6
 > 
-> # Adding a new row to the dataframe
-> # Use-case New student data entry
-> update2.stdDataEng <- rbind(update1.stdDataEng, new_stdData )
-> update2.stdDataEng
-  std_id std_name std_marks_eng Grades
-1      1  William          84.8      B
-2      2    James          98.4      A
-3      3   Olivia          74.6      C
-4      4    Steve          80.0     B+
-5      5    David          95.0     A+
-6      6   George          75.6      C
+> update.stdDataEng <- rbind(student.dataEnglish, new_stdData)
 > 
-> # Dropping a row in the data frame update3.stdDataEng
-> update3.stdDataEng <- update2.stdDataEng[-2, ]
-> update3.stdDataEng
-  std_id std_name std_marks_eng Grades
-1      1  William          84.8      B
-3      3   Olivia          74.6      C
-4      4    Steve          80.0     B+
-5      5    David          95.0     A+
-6      6   George          75.6      C
-> 
-> # Dropping a column in the dataframe update3.stdDataEng
-> update4.stdDataEng <- update3.stdDataEng[ , -4]
-> update4.stdDataEng
+> update.stdDataEng
   std_id std_name std_marks_eng
 1      1  William          84.8
+2      2    James          98.4
 3      3   Olivia          74.6
 4      4    Steve          80.0
 5      5    David          95.0
 6      6   George          75.6
-> 
-> # Returning column as a vector
-> update4.stdDataEng[1]
-  std_id
-1      1
-3      3
-4      4
-5      5
-6      6
-> update4.stdDataEng[[1]]
-[1] 1 3 4 5 6
 
 ~~~
 {: .output}
