@@ -26,7 +26,6 @@ library(help = "datasets")
 
 # SOME SAMPLE DATASETS #####################################
 
-~~~
 iris
 ?iris
 
@@ -49,9 +48,6 @@ str(iris)
 rm(list = ls())
 
 iris
-~~~
-{: .language-r}
-
 
 # CLEAN UP #################################################
 
