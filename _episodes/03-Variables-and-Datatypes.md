@@ -104,8 +104,7 @@ full_name <- paste (firstname, lastname)
 full_name
 
 ~~~
-{: .language-r}
-
+{:.language-r}
 ~~~
 # output
 # Declaring character value with double quotes ""
