@@ -11,7 +11,7 @@ keypoints:
 
 ## Sample Dataset 
 
--	One of the great and easiest ways to start experimenting with the analysis in R is by means of built-in sample datasets available in R. These datasets are available in their own package. 
+-	One of the easiest ways to start experimenting with the analysis in R is by means of built-in sample datasets available in R. These datasets are available in their own package. 
 
 -	Use the code provided in the script to load the dataset and then toggle through help function to know the complete information of the dataset.
 
@@ -81,11 +81,11 @@ Here, header = T - Indicates the first column in the file contains column names.
 
 Double click (or) click once and select open on your desired file to import 
 
-Once the data has been imported successfully the data frame would be visible with its name in the Environment part on the top right.
+Once the data has been imported successfully the data frame would be visible with its name in the Environment pane on the top right.
 
 ### Packages 
 
--	One of the most important things in R is its collection of Packages. The package is a collection of R functions, data, and compiled code and Library is the location where the packages are stored. In order to access these packages, we can either go to r-project. Org > CRAN> 0 Cloud> packages>CRAN task view or use the command library() to load the package in the current R session.
+-	One of the most important things in R is its collection of Packages. The package is a collection of R functions, data, and compiled code and Library is the location where the packages are stored. In order to access these packages, we can either go to **r-project. Org > CRAN> 0 Cloud> packages>CRAN task view** or use the **command library()** to load the package in the current R session.
 -	Then just call the appropriate package functions 
 
 install.packages("package_name") – Install the package from CRAN repository 
@@ -93,9 +93,6 @@ install.packages("package_name") – Install the package from CRAN repository
 install.packages( c("package_1", “"package_2", "package_3") ) -Install multiple packages
 
 library("package_name") – Load the package in current R session.
-
--	One of the other way is to install a meta-reference which means it’s a package for packages which is the pacman 
-this will then load or put into active memory a few essential packages
 
 ~~~
 # first step of using a package
