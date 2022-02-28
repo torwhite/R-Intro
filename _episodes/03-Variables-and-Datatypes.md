@@ -76,42 +76,6 @@ Character data type value is written withing single (‘ ‘)or double inverted 
 
 Example- “A”, “2.21”, “skill@”.
 
-
-
-~~~
-#input 
-# Declaring character value with double quotes ""
-charac <- "Abcd"
-charac
-class(charac)
-
-# Declaring character value with single quotes ''
-charac_1 <- 'b'
-charac_1
-class(charac_1)
-
-#Convert values to character data type.
-pi_value <- 3.14
-x <- as. character(pi_value)
-x
-class(x)
-
-# Concatenation of Character
-first name <- "Kasturi "
-last name <- "Acharya"
-
-
-# Character Value Concatenation
-# Paste function is used to concatenate characters
-full_name <- paste (first_name, last_name)
-full_name
-
-~~~
-{:.language-r}
-
-
-
-
 ~~~
 
 # input code
@@ -132,12 +96,12 @@ x
 class(x)
 
 # Concatenation of Character
-first name <- "Kasturi "
-last name <- "Acharya"
+firstname <- "Kasturi "
+lastname <- "Acharya"
 
 # Character Value Concatenation
 # Paste function is used to concatenate characters
-full_name <- paste (first_name, last_name)
+full_name <- paste (firstname, lastname)
 full_name
 
 ~~~
