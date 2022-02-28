@@ -77,7 +77,6 @@ Character data type value is written withing single (‘ ‘)or double inverted 
 Example- “A”, “2.21”, “skill@”.
 
 ~~~
-
 # input code
 # Declaring character value with double quotes ""
 charac <- "Abcd"
@@ -106,9 +105,6 @@ full_name
 
 ~~~
 {: .language-r}
-
-
-
 
 ~~~
 # output
