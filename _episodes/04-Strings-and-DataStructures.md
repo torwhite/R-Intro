@@ -355,7 +355,7 @@ length(vector_name) - Number of elements present inside the vector
 
 ####  **Subsetting a vector**
 
-R uses one-indexing mechanism where the elements in the vector start with an index number of one.
+R uses **one-indexing** mechanism where the elements in the vector start with an index number of one instead of a zero.
 
 vector_name[4] - Element at the fourth position (index) in the vector
 
@@ -412,51 +412,9 @@ order(vector) - Returns the indices of the vector in the order they would appear
 ~~~
 {: .language-r}
 
-### Vector indexing
 
-# Indexing 
-# R uses 1 indexing 
 
-~~~
-x <- c("A", "B", "C", "D", "E")
-x
 
-x[1]
-
-x[4]
-
-#range
-
-x[1:4]
-
-# index a vector with a vector
-
-x[c(1,4)]
-~~~
-{: .language-r}
-
-~~~
-> x <- c("A", "B", "C", "D", "E")
-> x
-[1] "A" "B" "C" "D" "E"
-> 
-> x[1]
-[1] "A"
-> 
-> x[4]
-[1] "D"
-> 
-> #range
-> 
-> x[1:4]
-[1] "A" "B" "C" "D"
-> 
-> # index a vector with a vector
-> 
-> x[c(1,4)]
-[1] "A" "D"
-~~~
-{: .output}
 
 
 
