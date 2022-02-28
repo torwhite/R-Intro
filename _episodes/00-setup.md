@@ -32,6 +32,6 @@ Please download the following files to particpate in the workshop:
 
 ## About the Data Used in this Workshop:
 
-The datasets used in this workshop are common "built-in" datasets in R, one  called cars and another called colleges. This means that the datasets are already pre-loaded in R and do not need to be imported from another source (csv, excel etc.). In the workshop, you will learn how to interact with these datasets.
+The datasets used in this workshop are common "built-in" datasets in R, one called cars and another called colleges. This means that the datasets are already pre-loaded in R and do not need to be imported from another source (csv, excel etc.). In the workshop, you will learn how to interact with these datasets.
 
 
