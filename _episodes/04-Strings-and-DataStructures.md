@@ -229,13 +229,19 @@ class(y2)
 
 
 ## Data Structure
-A data structure is essentially a way to organize data in a system to facilitate effective usage of the same.Data structures are the objects that are manipulated regularly in R. They are used to store data in an organized fashion to make data manipulation and other data operations more efficient. R has many data structure which are as follows- 
--Vectors
--Lists
--Matrices
--Factors
--Data Frames
--Arrays
+A data structure is essentially a way to organize data in a system to facilitate effective usage of the same.Data structures are the objects that are manipulated regularly in R. They are used to store data in an organized fashion to make data manipulation and other data operations more efficient. R has many data structure which are as follows
+
+- Vectors
+
+- Lists
+
+- Matrices
+
+- Factors
+
+- Data Frames
+
+- Arrays
 
 ### Vector
 
